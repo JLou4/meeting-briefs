@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{name}} — Meeting Brief</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="container">
+    <a href="../index.html" style="font-size: 13px; color: var(--text-secondary); text-decoration: none;">← All Briefs</a>
+    
+    <header class="brief-header" style="margin-top: 16px;">
+      {{#if logo}}<img src="{{logo}}" alt="" class="logo">{{/if}}
+      <h1>{{name}}</h1>
+      <p class="tagline">{{tagline}}</p>
+      <p class="links">
+        {{#if website}}<a href="{{website}}" target="_blank">Website</a>{{/if}}
+        {{#if twitter}}<span>·</span><a href="{{twitter}}" target="_blank">Twitter</a>{{/if}}
+        {{#if linkedin}}<span>·</span><a href="{{linkedin}}" target="_blank">LinkedIn</a>{{/if}}
+        {{#if location}}<span>·</span>{{location}}{{/if}}
+        {{#if founded}}<span>·</span>Founded {{founded}}{{/if}}
+      </p>
+    </header>
+
+    {{#if meetingWith}}
+    <section class="section">
+      <h2 class="section-title">Meeting With</h2>
+      <div class="team-member">
+        <div class="name">{{meetingWith.name}}</div>
+        <div class="role">{{meetingWith.role}}</div>
+        {{#if meetingWith.background}}
+        <div class="background">{{meetingWith.background}}</div>
+        {{/if}}
+      </div>
+    </section>
+    {{/if}}
+
+    <section class="section">
+      <h2 class="section-title">The Space</h2>
+      <p>{{space}}</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">What They're Building</h2>
+      <p>{{product}}</p>
+    </section>
+
+    {{#if funding}}
+    <section class="section">
+      <h2 class="section-title">Funding</h2>
+      <table class="funding-table">
+        <thead>
+          <tr>
+            <th>Round</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Investors</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each funding.rounds}}
+          <tr>
+            <td>{{this.round}}</td>
+            <td>{{this.amount}}</td>
+            <td>{{this.date}}</td>
+            <td>{{this.investors}}</td>
+          </tr>
+          {{/each}}
+          <tr class="total">
+            <td colspan="3"><strong>Total Raised</strong></td>
+            <td><strong>{{funding.total}}</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    {{/if}}
+
+    {{#if team}}
+    <section class="section">
+      <h2 class="section-title">Team</h2>
+      {{#each team}}
+      <div class="team-member">
+        <div class="name">{{this.name}}</div>
+        <div class="role">{{this.role}}</div>
+        <div class="background">{{this.background}}</div>
+      </div>
+      {{/each}}
+    </section>
+    {{/if}}
+
+    {{#if news}}
+    <section class="section">
+      <h2 class="section-title">Recent News</h2>
+      <ul class="news-list">
+        {{#each news}}
+        <li>
+          <a href="{{this.url}}" target="_blank">{{this.title}}</a>
+          <span class="date">— {{this.source}}, {{this.date}}</span>
+        </li>
+        {{/each}}
+      </ul>
+    </section>
+    {{/if}}
+
+    {{#if competitors}}
+    <section class="section">
+      <h2 class="section-title">Competitors & Landscape</h2>
+      <p>{{competitors}}</p>
+    </section>
+    {{/if}}
+
+    {{#if sources}}
+    <div class="sources">
+      <h3>Sources</h3>
+      <ol>
+        {{#each sources}}
+        <li id="src-{{@index}}"><a href="{{this.url}}" target="_blank">{{this.label}}</a></li>
+        {{/each}}
+      </ol>
+    </div>
+    {{/if}}
+
+    <p class="generated">Generated {{generatedDate}}</p>
+  </div>
+</body>
+</html>

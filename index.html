@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meeting Briefs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <h1>Meeting Briefs</h1>
+      <p>Pre-meeting research on companies and funds</p>
+    </header>
+    
+    <main class="brief-list" id="briefList">
+      <!-- Briefs will be loaded here dynamically -->
+    </main>
+    
+    <div class="empty-state" id="emptyState" style="display: none;">
+      <p>No briefs yet. Ask Icarus to generate one before your next meeting.</p>
+    </div>
+  </div>
+
+  <script>
+    // Load briefs index and render cards
+    async function loadBriefs() {
+      try {
+        const res = await fetch('briefs/index.json');
+        if (!res.ok) throw new Error('No briefs yet');
+        const briefs = await res.json();
+        
+        if (briefs.length === 0) {
+          document.getElementById('emptyState').style.display = 'block';
+          document.getElementById('briefList').style.display = 'none';
+          return;
+        }
+        
+        const list = document.getElementById('briefList');
+        list.innerHTML = briefs.map(brief => `
+          <a href="briefs/${brief.slug}.html" class="brief-card">
+            <span class="type ${brief.type}">${brief.type}</span>
+            <span class="name">${brief.name}</span>
+            <div class="meta">
+              ${brief.person ? `Meeting with ${brief.person} · ` : ''}
+              ${brief.date}
+            </div>
+          </a>
+        `).join('');
+        
+      } catch (e) {
+        document.getElementById('emptyState').style.display = 'block';
+        document.getElementById('briefList').style.display = 'none';
+      }
+    }
+    
+    loadBriefs();
+  </script>
+</body>
+</html>
