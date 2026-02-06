@@ -1,6 +1,6 @@
 # Meeting Briefs
 
-**Status:** In Development
+**Status:** Infrastructure Complete (Feb 6, 2026)
 **Purpose:** Generate one-page briefing docs before meetings with startups and VCs
 
 ## Overview
@@ -27,7 +27,7 @@ I research and generate a polished one-pager with all relevant context, stored o
 
 ## Output
 
-**Site:** Standalone Cloudflare Pages site (meeting-briefs.pages.dev or similar)
+**Site:** https://meeting-briefs.pages.dev (Cloudflare Pages, auto-deploys from GitHub)
 
 **Homepage:** List of past briefs as cards
 - Company/Fund name
