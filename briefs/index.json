@@ -1,5 +1,12 @@
 [
   {
+    "slug": "joe-schmidt-a16z",
+    "name": "Andreessen Horowitz",
+    "person": "Joe Schmidt IV",
+    "type": "vc",
+    "date": "Feb 10, 2026"
+  },
+  {
     "slug": "tristan-semmelhack-reflect-orbital",
     "name": "Reflect Orbital",
     "person": "Tristan Semmelhack",
