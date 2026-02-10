@@ -4,129 +4,219 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joe Schmidt IV — a16z | Meeting Brief</title>
-    <link rel="stylesheet" href="../styles.css">
+    <style>
+        :root {
+            --primary: #1a1a2e;
+            --accent: #16a34a;
+            --bg: #fafafa;
+            --card-bg: #ffffff;
+            --text: #2d3436;
+            --text-light: #636e72;
+            --border: #e0e0e0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid var(--primary);
+        }
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        h1 { font-size: 2rem; color: var(--primary); margin-bottom: 0.25rem; }
+        .subtitle { color: var(--text-light); font-size: 1.1rem; }
+        .meta { font-size: 0.85rem; color: var(--text-light); margin-top: 0.5rem; }
+        .meta a { color: var(--accent); text-decoration: none; }
+        .meta a:hover { text-decoration: underline; }
+        .badge {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        section {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        h3 {
+            font-size: 1rem;
+            color: var(--primary);
+            margin: 1rem 0 0.5rem;
+        }
+        h3:first-child { margin-top: 0; }
+        ul { margin-left: 1.25rem; }
+        li { margin-bottom: 0.4rem; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 1rem; }
+        th, td { padding: 0.6rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { font-weight: 600; color: var(--text-light); font-size: 0.85rem; text-transform: uppercase; }
+        .callout {
+            background: #f0fdf4;
+            border-left: 3px solid var(--accent);
+            padding: 1rem;
+            margin: 1rem 0;
+            font-style: italic;
+        }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        sup { font-size: 0.7rem; color: var(--accent); }
+        .sources {
+            background: var(--bg);
+            border-radius: 6px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+        .sources ol { margin-left: 1.25rem; font-size: 0.9rem; color: var(--text-light); }
+        .sources li { margin-bottom: 0.3rem; }
+        footer {
+            text-align: center;
+            padding-top: 1.5rem;
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+        @media (max-width: 600px) {
+            body { padding: 1rem; }
+            h1 { font-size: 1.5rem; }
+            section { padding: 1rem; }
+        }
+    </style>
 </head>
 <body>
-    <nav class="breadcrumb">
-        <a href="../index.html">← All Briefs</a>
-    </nav>
-    
-    <article class="brief">
-        <header class="brief-header">
-            <div class="brief-type">VC Partner Brief</div>
-            <h1>Joe Schmidt IV</h1>
-            <p class="one-liner">Partner at Andreessen Horowitz • Fintech, insurtech, & vertical AI software</p>
-            <div class="meta-links">
-                <a href="https://a16z.com/author/joe-schmidt/" target="_blank">a16z Profile</a>
-                <a href="https://www.linkedin.com/in/joeschmidtiv/" target="_blank">LinkedIn</a>
-                <a href="https://x.com/joeschmidtiv" target="_blank">@joeschmidtiv</a>
+    <header>
+        <div class="header-top">
+            <div>
+                <span class="badge">VC Partner Brief</span>
+                <h1>Joe Schmidt IV</h1>
+                <p class="subtitle">Partner at Andreessen Horowitz · Fintech, insurtech, & vertical AI software</p>
+                <p class="meta">
+                    <a href="https://a16z.com/author/joe-schmidt/" target="_blank">a16z Profile</a> · 
+                    <a href="https://www.linkedin.com/in/joeschmidtiv/" target="_blank">LinkedIn</a> · 
+                    <a href="https://x.com/joeschmidtiv" target="_blank">@joeschmidtiv</a>
+                </p>
             </div>
-            <div class="brief-date">Generated: February 10, 2026</div>
-        </header>
+        </div>
+    </header>
 
-        <section>
-            <h2>🏢 Fund Overview</h2>
-            <table class="info-table">
-                <tr><td>Firm</td><td>Andreessen Horowitz (a16z)</td></tr>
-                <tr><td>Team</td><td>Fintech / Growth</td></tr>
-                <tr><td>Focus Areas</td><td>Software, fintech, insurtech, vertical AI</td></tr>
-                <tr><td>Check Size</td><td>Seed → Growth (a16z does $1M–$100M+)</td></tr>
-                <tr><td>Location</td><td>San Francisco, CA</td></tr>
-            </table>
-        </section>
+    <section>
+        <h2>🏢 Fund Overview</h2>
+        <table>
+            <tr><th>Firm</th><td>Andreessen Horowitz (a16z)</td></tr>
+            <tr><th>Team</th><td>Fintech / Growth</td></tr>
+            <tr><th>Focus Areas</th><td>Software, fintech, insurtech, vertical AI</td></tr>
+            <tr><th>Check Size</th><td>Seed → Growth ($1M–$100M+)</td></tr>
+            <tr><th>Location</th><td>San Francisco, CA</td></tr>
+        </table>
+    </section>
 
-        <section>
-            <h2>🎯 Investment Thesis</h2>
-            <p>Joe focuses on <strong>AI-native vertical software</strong> that can disrupt legacy systems of record. Key themes:</p>
-            <ul>
-                <li><strong>"AI Wedges"</strong> — Products that capture data upstream of legacy systems (Salesforce, Guidewire, ServiceNow), using voice agents, email, or internal comms as the entry point<sup>1</sup></li>
-                <li><strong>Services-Led Growth</strong> — Believes the "forward deployed engineer" is the hottest job in startups; enterprise AI requires deep implementation, not just PLG<sup>2</sup></li>
-                <li><strong>Insurance modernization</strong> — Trillion-dollar industry still running on PDFs and Excel; LLMs can transform underwriting, claims, and pricing</li>
-                <li><strong>Cross-border fintech</strong> — Infrastructure for default-global companies moving money internationally</li>
-            </ul>
-            <p class="callout">💡 <em>"Enterprises buying AI are like your grandma getting an iPhone: they want to use it, but they need you to set it up."</em></p>
-        </section>
+    <section>
+        <h2>🎯 Investment Thesis</h2>
+        <p>Joe focuses on <strong>AI-native vertical software</strong> that can disrupt legacy systems of record. Key themes:</p>
+        <ul>
+            <li><strong>"AI Wedges"</strong> — Products that capture data upstream of legacy systems (Salesforce, Guidewire, ServiceNow), using voice agents, email, or internal comms as the entry point<sup>1</sup></li>
+            <li><strong>Services-Led Growth</strong> — Believes the "forward deployed engineer" is the hottest job in startups; enterprise AI requires deep implementation, not just PLG<sup>2</sup></li>
+            <li><strong>Insurance modernization</strong> — Trillion-dollar industry still running on PDFs and Excel; LLMs can transform underwriting, claims, and pricing</li>
+            <li><strong>Cross-border fintech</strong> — Infrastructure for default-global companies moving money internationally</li>
+        </ul>
+        <div class="callout">
+            💡 "Enterprises buying AI are like your grandma getting an iPhone: they want to use it, but they need you to set it up."
+        </div>
+    </section>
 
-        <section>
-            <h2>📈 Notable Investments</h2>
-            <table class="portfolio-table">
-                <tr>
-                    <td><strong>11x</strong></td>
-                    <td>AI sales development (SDR automation)</td>
-                    <td>Series B, $50M (Sep 2024)</td>
-                </tr>
-                <tr>
-                    <td><strong>FurtherAI</strong></td>
-                    <td>Insurance automation</td>
-                    <td>Series A, $25M (Oct 2025)</td>
-                </tr>
-                <tr>
-                    <td><strong>Oyster</strong></td>
-                    <td>Global employment platform</td>
-                    <td>Seed, $4M (Dec 2022)</td>
-                </tr>
-                <tr>
-                    <td><strong>Super Seguros</strong></td>
-                    <td>LatAm insurtech</td>
-                    <td>Series A, $7M (Jul 2021)</td>
-                </tr>
-            </table>
-            <p>Pattern: <strong>AI replacing human workflows</strong> in high-complexity, high-value industries (sales, insurance, HR). Likes companies that invest in implementation/services early to build moats.</p>
-        </section>
+    <section>
+        <h2>📈 Notable Investments</h2>
+        <table>
+            <tr><th>Company</th><th>What They Do</th><th>Round</th></tr>
+            <tr><td><strong>11x</strong></td><td>AI sales development (SDR automation)</td><td>Series B, $50M (Sep 2024)</td></tr>
+            <tr><td><strong>FurtherAI</strong></td><td>Insurance automation</td><td>Series A, $25M (Oct 2025)</td></tr>
+            <tr><td><strong>Oyster</strong></td><td>Global employment platform</td><td>Seed, $4M (Dec 2022)</td></tr>
+            <tr><td><strong>Super Seguros</strong></td><td>LatAm insurtech</td><td>Series A, $7M (Jul 2021)</td></tr>
+        </table>
+        <p><em>Pattern: AI replacing human workflows in high-complexity, high-value industries (sales, insurance, HR). Likes companies that invest in implementation/services early to build moats.</em></p>
+    </section>
 
-        <section>
-            <h2>👤 Background</h2>
-            <ul>
-                <li><strong>a16z Partner</strong> (Sep 2021 – present) — Fintech team</li>
-                <li><strong>VP Business Development, Ethos</strong> — Scaled agent distribution channel to millions in monthly revenue; led carrier/reinsurance partnerships<sup>3</sup></li>
-                <li><strong>Investor, Accel</strong> — Pre-partner VC experience</li>
-                <li><strong>Notre Dame Investment Office</strong> — Buser Fellow managing endowment</li>
-            </ul>
-            
-            <h3>🏈 The Football Story</h3>
-            <p>Joe was a <strong>walk-on linebacker at Notre Dame</strong> who became team captain and MVP in 2014 — the first walk-on to win team MVP since 2002. Brian Kelly said: <em>"What we lacked without him was the leadership, energy, and passion needed in this game on a day-to-day basis."</em><sup>4</sup></p>
-            <p>This shapes his investing lens: he appreciates scrappy founders who outwork the competition and build through grit rather than pedigree.</p>
-        </section>
+    <section>
+        <h2>👤 Background</h2>
+        <ul>
+            <li><strong>a16z Partner</strong> (Sep 2021 – present) — Fintech team</li>
+            <li><strong>VP Business Development, Ethos</strong> — Scaled agent distribution channel to millions in monthly revenue; led carrier/reinsurance partnerships<sup>3</sup></li>
+            <li><strong>Investor, Accel</strong> — Pre-partner VC experience</li>
+            <li><strong>Notre Dame Investment Office</strong> — Buser Fellow managing endowment</li>
+        </ul>
+        
+        <h3>🏈 The Football Story</h3>
+        <p>Joe was a <strong>walk-on linebacker at Notre Dame</strong> who became team captain and MVP in 2014 — the first walk-on to win team MVP since 2002. Brian Kelly said: <em>"What we lacked without him was the leadership, energy, and passion needed in this game on a day-to-day basis."</em><sup>4</sup></p>
+        <p style="margin-top: 0.5rem;">This shapes his investing lens: he appreciates scrappy founders who outwork the competition and build through grit rather than pedigree.</p>
+    </section>
 
-        <section>
-            <h2>📝 Recent Writing & Talks</h2>
-            <ul>
-                <li><a href="https://a16z.com/services-led-growth/" target="_blank">"Trading Margin for Moat: Why the Forward Deployed Engineer Is the Hottest Job in Startups"</a> (Jun 2025)</li>
-                <li><a href="https://a16z.com/ai-wedges-will-help-startups-outmaneuver-incumbents/" target="_blank">"Drinking Milkshakes: How AI Wedges Will Help Startups Outmaneuver Incumbents"</a> (Oct 2024)</li>
-                <li><a href="https://a16z.com/announcement/investing-in-11x/" target="_blank">11x Investment Announcement</a> — on AI SDRs replacing sales admin</li>
-                <li><a href="https://a16z.com/podcast/death-of-a-salesforce-why-ai-will-transform-sales/" target="_blank">"Death of a Salesforce" Podcast</a> (Dec 2024)</li>
-            </ul>
-        </section>
+    <section>
+        <h2>📝 Recent Writing & Talks</h2>
+        <ul>
+            <li><a href="https://a16z.com/services-led-growth/" target="_blank">"Trading Margin for Moat: Why the Forward Deployed Engineer Is the Hottest Job in Startups"</a> (Jun 2025)</li>
+            <li><a href="https://a16z.com/ai-wedges-will-help-startups-outmaneuver-incumbents/" target="_blank">"Drinking Milkshakes: How AI Wedges Will Help Startups Outmaneuver Incumbents"</a> (Oct 2024)</li>
+            <li><a href="https://a16z.com/announcement/investing-in-11x/" target="_blank">11x Investment Announcement</a> — on AI SDRs replacing sales admin</li>
+            <li><a href="https://a16z.com/podcast/death-of-a-salesforce-why-ai-will-transform-sales/" target="_blank">"Death of a Salesforce" Podcast</a> (Dec 2024)</li>
+        </ul>
+    </section>
 
-        <section>
-            <h2>💬 Reputation & Style</h2>
-            <ul>
-                <li><strong>Operator-turned-investor</strong> — Scaled a business at Ethos before joining VC; understands go-to-market deeply</li>
-                <li><strong>Insurance domain expert</strong> — One of few VCs who genuinely understands carrier economics, underwriting, and distribution</li>
-                <li><strong>Thesis-driven</strong> — Writes extensively; expects founders to have strong conviction on why now</li>
-                <li><strong>Midwest values</strong> — Notre Dame walk-on story suggests he respects hustle over flash</li>
-            </ul>
-        </section>
+    <section>
+        <h2>💬 Reputation & Style</h2>
+        <ul>
+            <li><strong>Operator-turned-investor</strong> — Scaled a business at Ethos before joining VC; understands go-to-market deeply</li>
+            <li><strong>Insurance domain expert</strong> — One of few VCs who genuinely understands carrier economics, underwriting, and distribution</li>
+            <li><strong>Thesis-driven</strong> — Writes extensively; expects founders to have strong conviction on why now</li>
+            <li><strong>Midwest values</strong> — Notre Dame walk-on story suggests he respects hustle over flash</li>
+        </ul>
+    </section>
 
-        <section>
-            <h2>🎯 Conversation Starters</h2>
-            <ul>
-                <li>His "AI wedge" thesis — how are you capturing data upstream of legacy systems?</li>
-                <li>Services-led growth — are you investing in implementation, or trying to be pure-PLG?</li>
-                <li>Notre Dame football — genuine passion; don't be fake but can reference if natural</li>
-                <li>His dog Chipotle 🐶 — his Twitter bio is "Chipotle's dad"</li>
-            </ul>
-        </section>
+    <section>
+        <h2>🎯 Conversation Starters</h2>
+        <ul>
+            <li>His "AI wedge" thesis — how are you capturing data upstream of legacy systems?</li>
+            <li>Services-led growth — are you investing in implementation, or trying to be pure-PLG?</li>
+            <li>Notre Dame football — genuine passion; don't be fake but can reference if natural</li>
+            <li>His dog Chipotle 🐶 — his Twitter bio is "Chipotle's dad"</li>
+        </ul>
+    </section>
 
-        <section class="sources">
-            <h2>Sources</h2>
+    <section>
+        <h2>Sources</h2>
+        <div class="sources">
             <ol>
-                <li><a href="https://a16z.com/ai-wedges-will-help-startups-outmaneuver-incumbents/">a16z: "Drinking Milkshakes: How AI Wedges Will Help Startups Outmaneuver Incumbents"</a></li>
-                <li><a href="https://a16z.com/services-led-growth/">a16z: "Trading Margin for Moat"</a></li>
-                <li><a href="https://a16z.com/author/joe-schmidt/">a16z Author Page — Joe Schmidt bio</a></li>
-                <li><a href="https://bleacherreport.com/articles/2300737-notre-dame-football-from-walk-on-to-mvp-the-joe-schmidt-story">Bleacher Report: "From Walk-on to MVP—The Joe Schmidt Story"</a></li>
+                <li><a href="https://a16z.com/ai-wedges-will-help-startups-outmaneuver-incumbents/" target="_blank">a16z: "Drinking Milkshakes: How AI Wedges Will Help Startups Outmaneuver Incumbents"</a></li>
+                <li><a href="https://a16z.com/services-led-growth/" target="_blank">a16z: "Trading Margin for Moat"</a></li>
+                <li><a href="https://a16z.com/author/joe-schmidt/" target="_blank">a16z Author Page — Joe Schmidt bio</a></li>
+                <li><a href="https://bleacherreport.com/articles/2300737-notre-dame-football-from-walk-on-to-mvp-the-joe-schmidt-story" target="_blank">Bleacher Report: "From Walk-on to MVP—The Joe Schmidt Story"</a></li>
             </ol>
-        </section>
-    </article>
+        </div>
+    </section>
+
+    <footer>
+        Generated February 10, 2026 · <a href="../index.html">← All Briefs</a>
+    </footer>
 </body>
 </html>
