@@ -21,9 +21,20 @@ I research and generate a polished one-pager with all relevant context, stored o
 | Crunchbase Enterprise API | API key (in secrets) | Funding, investors, company data |
 | Company website | web_fetch | Product info, team, about |
 | LinkedIn | User provides URL | Person background |
-| X/Twitter | bird skill / web | Social presence, recent activity |
+| X/Twitter | x-research skill (official API) | Social presence, recent activity, sentiment |
 | News/Web | web_search | Recent press, announcements |
 | Hacker News | API (TBD) | Discussions, launches, sentiment |
+
+### Twitter Research (x-research skill)
+
+For each brief, I pull:
+1. **Profile check** — `bun run x-search.ts profile <handle>` for the person's recent tweets (~$0.10)
+2. **Company search** — `bun run x-search.ts search "<company>" --sort likes` for mentions/sentiment (~$0.50)
+3. **Founder search** (optional) — if founders are notable, search their handles
+
+**Cost:** ~$0.60 per brief for Twitter data
+**Location:** `~/.openclaw/workspace/skills/x-research`
+**Auth:** Bearer token in `~/.config/env/global.env`
 
 ## Output
 
