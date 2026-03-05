@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derik Pridmore — OSARO | Meeting Brief</title>
+    <style>
+        :root {
+            --primary: #1a1a2e;
+            --accent: #4a6fa5;
+            --bg: #fafafa;
+            --card-bg: #ffffff;
+            --text: #2d3436;
+            --text-light: #636e72;
+            --border: #e0e0e0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid var(--primary);
+        }
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        h1 { font-size: 2rem; color: var(--primary); margin-bottom: 0.25rem; }
+        .subtitle { color: var(--text-light); font-size: 1.1rem; }
+        .meta { font-size: 0.85rem; color: var(--text-light); margin-top: 0.5rem; }
+        .badge {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        section {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        h3 {
+            font-size: 1rem;
+            color: var(--primary);
+            margin: 1rem 0 0.5rem;
+        }
+        h3:first-child { margin-top: 0; }
+        ul { margin-left: 1.25rem; }
+        li { margin-bottom: 0.4rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+        .stat { text-align: center; padding: 1rem; background: var(--bg); border-radius: 6px; }
+        .stat-value { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
+        .stat-label { font-size: 0.8rem; color: var(--text-light); }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 0.6rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { font-weight: 600; color: var(--text-light); font-size: 0.85rem; text-transform: uppercase; }
+        .source {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.75rem;
+            vertical-align: super;
+            cursor: help;
+        }
+        .source:hover { text-decoration: underline; }
+        .highlight { background: #fff3cd; padding: 0.15rem 0.3rem; border-radius: 3px; }
+        .links { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem; }
+        .links a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .links a:hover { text-decoration: underline; }
+        .quote {
+            border-left: 3px solid var(--accent);
+            padding-left: 1rem;
+            font-style: italic;
+            color: var(--text-light);
+            margin: 1rem 0;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 1.5rem;
+            border-left: 2px solid var(--border);
+        }
+        .timeline-item {
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -1.65rem;
+            top: 0.5rem;
+            width: 10px;
+            height: 10px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+        .timeline-date { font-weight: 600; color: var(--primary); }
+        @media (max-width: 600px) {
+            body { padding: 1rem; }
+            h1 { font-size: 1.5rem; }
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div>
+                <h1>Derik Pridmore</h1>
+                <div class="subtitle">Co-Founder & CEO, OSARO</div>
+                <div class="meta">San Francisco, CA · Ex-Founders Fund · Ex-Arda Capital · Ben-Gurion University</div>
+                <div class="links">
+                    <a href="https://www.linkedin.com/in/derik-pridmore-1451812/" target="_blank">LinkedIn</a>
+                    <a href="https://www.osaro.com" target="_blank">OSARO</a>
+                    <a href="https://www.crunchbase.com/person/derik-pridmore" target="_blank">Crunchbase</a>
+                </div>
+            </div>
+            <span class="badge">AI / Robotics / Logistics</span>
+        </div>
+    </header>
+
+    <section>
+        <h2>TL;DR</h2>
+        <p>Derik is a <span class="highlight">former VC turned founder</span> — previously at Founders Fund and Arda Capital Management, where he invested in DeepMind and Clarifai.<a href="https://www.crunchbase.com/person/derik-pridmore" class="source" title="Crunchbase">¹</a> In 2015 he co-founded OSARO, which builds <strong>AI-powered robotic picking, bagging, kitting, and depalletizing</strong> for warehouse automation. The company has raised <strong>~$87M</strong> across multiple rounds from investors including Octave Ventures, King River Capital, Mark Cuban, iRobot, and Founders Fund.<a href="https://pitchbook.com/profiles/company/139907-71" class="source" title="PitchBook">²</a> OSARO is deployed across <strong>five continents</strong> with major logistics and e-commerce customers. <span class="highlight">Tomales Bay Capital is an existing investor</span> (participated in Series C).<a href="https://www.robotics247.com/article/osaro_raises_series_c_funding_software_defined_logistics_automation/systems_engineer" class="source" title="Robotics 24/7">³</a></p>
+    </section>
+
+    <section>
+        <h2>OSARO at a Glance</h2>
+        <div class="grid">
+            <div class="stat">
+                <div class="stat-value">~$87M</div>
+                <div class="stat-label">Total Raised</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">2015</div>
+                <div class="stat-label">Founded</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">5</div>
+                <div class="stat-label">Continents Deployed</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">SF + Japan</div>
+                <div class="stat-label">Offices</div>
+            </div>
+        </div>
+
+        <h3>What They're Building</h3>
+        <p>OSARO develops <strong>hardware-agnostic AI software</strong> for industrial robots. Their core platform, <strong>SightWorks™</strong>, is a perception engine that lets robots make real-time decisions for high-variability warehouse tasks.<a href="https://www.osaro.com" class="source" title="OSARO">⁴</a></p>
+        <ul>
+            <li><strong>Robotic Picking:</strong> High-SKU piece picking for e-commerce fulfillment — handles fragile items, complex packaging</li>
+            <li><strong>Robotic Bagging:</strong> Variable SKU and product shape handling for pack-and-ship workflows</li>
+            <li><strong>Robotic Kitting:</strong> Precision assembly of variable components and product geometries</li>
+            <li><strong>Robotic Depalletization:</strong> Mixed-case depal with variable packaging, sizes, orientations</li>
+            <li><strong>AutoModel™:</strong> Learns on the fly — handles new SKUs without interruption or reprogramming</li>
+        </ul>
+
+        <h3>Technical Differentiation</h3>
+        <ul>
+            <li><strong>Software-first:</strong> Hardware-agnostic — integrates with ASRS, AMRs, conveyors, any robot arm</li>
+            <li><strong>Perception + Control:</strong> Combines ML-based object recognition with adaptive control software</li>
+            <li><strong>Cloud GPU infrastructure:</strong> Data pipeline and training at scale</li>
+            <li><strong>VLA Foundation Model (2025):</strong> Partnered with NVIDIA's GR00T to build vision-language-action model using behavioral cloning and production data<a href="https://www.osaro.com" class="source" title="OSARO">⁴</a></li>
+            <li><strong>No 3D sensors needed:</strong> Trains from 2D video demonstrations — adapts to lighting, occlusion, object variation</li>
+        </ul>
+
+        <h3>Funding History</h3>
+        <table>
+            <tr><th>Round</th><th>Amount</th><th>Key Investors</th><th>Date</th></tr>
+            <tr><td>Seed/Early</td><td>—</td><td>Founders Fund, AME Cloud Ventures</td><td>2015–2018</td></tr>
+            <tr><td>Series B</td><td>~$20M</td><td>King River Capital, Mark Cuban, Darco Capital, iRobot, Pegasus Tech</td><td>Dec 2020</td></tr>
+            <tr><td>Series C</td><td>$17.3M</td><td>Existing investors</td><td>Apr 2021</td></tr>
+            <tr><td>Series C-II</td><td>$30M</td><td>Octave Ventures (lead), J17 Capital, Tomales Bay Capital, King River</td><td>Aug 2021</td></tr>
+            <tr style="font-weight:600;background:#f8f9fa;"><td>Total</td><td colspan="3">~$87M (Tracxn) / $79M (PitchBook) — 48 investors</td></tr>
+        </table>
+        <p style="font-size:0.85rem;color:var(--text-light);margin-top:0.75rem;"><strong>Notable investors:</strong> Founders Fund, Mark Cuban, iRobot, King River Capital, Octave Ventures, Leblon Capital, Champion Hill Ventures<a href="https://pitchbook.com/profiles/company/139907-71" class="source" title="PitchBook">²</a></p>
+    </section>
+
+    <section>
+        <h2>Derik's Background</h2>
+        <ul>
+            <li><strong>Founders Fund</strong> — Principal. Invested in pioneering AI companies including <strong>DeepMind</strong> (acquired by Google) and <strong>Clarifai</strong><a href="https://www.crunchbase.com/person/derik-pridmore" class="source" title="Crunchbase">¹</a></li>
+            <li><strong>Arda Capital Management</strong> — Hedge fund manager, continued deep-tech investing</li>
+            <li><strong>Angel investing</strong> — Over a decade of investment experience before founding OSARO</li>
+            <li><strong>Ben-Gurion University of the Negev</strong> — Attended 1993–1996, returned 2003–2005<a href="https://www.zippia.com/osaro-careers-1399091/executives/" class="source" title="Zippia">⁵</a></li>
+            <li><strong>Named "Pros to Know" 2021</strong> — Supply & Demand Chain Executive magazine (alongside CTO Michael Kahane)<a href="https://www.osaro.com/blog/osaro-co-founders-named-pros-to-know" class="source" title="OSARO Blog">⁶</a></li>
+        </ul>
+
+        <h3>Investor → Operator Arc</h3>
+        <p>Derik's path from Founders Fund → hedge fund → founding OSARO is a deliberate bet. After investing in companies like DeepMind, he saw firsthand how AI would transform physical industries and decided to build rather than back. That VC background gives him unusual fluency with investors and a clear-eyed view of unit economics.</p>
+    </section>
+
+    <section>
+        <h2>The Space — Warehouse Automation</h2>
+        <p>The warehouse automation market is driven by persistent labor shortages, e-commerce growth, and rising consumer expectations for speed. Key dynamics:</p>
+        <ul>
+            <li><strong>Labor crisis:</strong> Warehouse worker turnover exceeds 100% annually; automation is no longer optional for large fulfillment operators</li>
+            <li><strong>Mixed-SKU problem:</strong> The hardest unsolved piece — robots that can pick arbitrary items from bins without pre-programming each SKU</li>
+            <li><strong>Humanoid hype vs. reality:</strong> Derik is publicly skeptical of humanoids in logistics — calls out battery life, payload, safety, and cost barriers. Believes purpose-built systems win.<a href="https://www.roboticstomorrow.com/story/2025/01/osaro-ceo-derik-pridmores-2025-robotics-predictions-ai-powered-solutions-and-practical-automation-take-center-stage/23823/" class="source" title="RoboticsTomorrow">⁷</a></li>
+            <li><strong>AI models maturing:</strong> LLM/transformer-augmented perception is entering production, but systems still need domain-specific data and model adaptation</li>
+        </ul>
+        <div class="quote">"Not every problem needs a humanoid. Some just need a robot that does one thing extremely well."<br>— Derik Pridmore (LinkedIn, 2025)</div>
+    </section>
+
+    <section>
+        <h2>Competitors & Landscape</h2>
+        <ul>
+            <li><strong>Covariant</strong> — AI-powered robotic picking (acquired pieces by Amazon, 2024); was arguably closest competitor</li>
+            <li><strong>Ambi Robotics</strong> — AI picking and sorting for parcel logistics</li>
+            <li><strong>RightHand Robotics</strong> — Piece-picking for e-commerce fulfillment</li>
+            <li><strong>GreyOrange</strong> — Fulfillment automation (more hardware-centric)</li>
+            <li><strong>Berkshire Grey</strong> — AI-enabled robotic solutions (public, struggling)</li>
+            <li><strong>Dexterity</strong> — AI robots for palletizing/depalletizing</li>
+        </ul>
+        <p style="margin-top:0.75rem;">OSARO's differentiation is being <strong>software-first and hardware-agnostic</strong> — they don't sell robots, they sell the AI brain that makes existing robots intelligent. This gives them flexibility to integrate into diverse customer environments.</p>
+    </section>
+
+    <section>
+        <h2>Derik's 2025 Predictions</h2>
+        <p>From a January 2025 industry piece:<a href="https://www.roboticstomorrow.com/story/2025/01/osaro-ceo-derik-pridmores-2025-robotics-predictions-ai-powered-solutions-and-practical-automation-take-center-stage/23823/" class="source" title="RoboticsTomorrow">⁷</a></p>
+        <ul>
+            <li><strong>Automation accelerates:</strong> Political changes + labor shortages push operators to invest harder</li>
+            <li><strong>AI robots proven at scale:</strong> Multi-facility scale-up phase for production deployments; next frontier is truck/van unloading</li>
+            <li><strong>Adaptable AI models win:</strong> Production needs model platforms that adapt across architectures, not one-size-fits-all</li>
+            <li><strong>Humanoids stay niche:</strong> Single-digit unit growth; mass manufacturing 5+ years away</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Recent Activity</h2>
+        <ul>
+            <li><strong>Feb 2026:</strong> Published "Thirty Years In" industry insights piece on OSARO blog<a href="https://www.osaro.com" class="source" title="OSARO">⁴</a></li>
+            <li><strong>Feb 2026:</strong> Media coverage of OSARO's AI-driven fulfillment speed improvements</li>
+            <li><strong>Jan 2026:</strong> A3 Executive Roundtable participant — discussed automation heading into 2026</li>
+            <li><strong>Dec 2025:</strong> "Robots That Saved Christmas" — peak season deployment showcase</li>
+            <li><strong>2025:</strong> NVIDIA GR00T VLA foundation model partnership announced</li>
+            <li><strong>Active at industry events:</strong> Manifest 2026 (Las Vegas), FANUC ASI conference</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Team</h2>
+        <ul>
+            <li><strong>Derik Pridmore</strong> — Co-Founder & CEO (ex-Founders Fund, ex-Arda Capital)</li>
+            <li><strong>Michael Kahane</strong> — Co-Founder & CTO (20+ years engineering, ex-Samsung Semiconductors senior engineer)<a href="https://osaro.com/about" class="source" title="OSARO About">⁸</a></li>
+            <li><strong>Alexis Best</strong> — Marketing & Growth Lead (recently hired)</li>
+            <li><strong>Megan Guy</strong> — Board Member (Partner & Co-founder, King River Capital)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Key Context for This Meeting</h2>
+        <ul>
+            <li><span class="highlight">Tomales Bay Capital is already an investor</span> — participated in the $30M Series C-II round (Aug 2021)<a href="https://www.robotics247.com/article/osaro_raises_series_c_funding_software_defined_logistics_automation/systems_engineer" class="source" title="Robotics 24/7">³</a></li>
+            <li>Derik is an ex-VC — he'll speak your language on returns, TAM, unit economics</li>
+            <li>Fits your thesis: AI + robotics + deep-tech</li>
+            <li>Company is in scale-up phase — multiple continents, moving from proof-of-concept to multi-facility expansion</li>
+            <li>NVIDIA partnership signals technical credibility at the frontier of embodied AI</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Potential Conversation Starters</h2>
+        <ul>
+            <li>How has the competitive landscape shifted since Covariant's talent got absorbed by Amazon?</li>
+            <li>What does the path from Series C to profitability (or next round) look like?</li>
+            <li>How is the NVIDIA GR00T VLA partnership changing what's possible in production?</li>
+            <li>What's the customer expansion playbook — land with picking, expand to bagging/kitting/depal?</li>
+            <li>You've been publicly skeptical of humanoids — where do you see the real inflection point for warehouse automation instead?</li>
+            <li>What's driving the Japan office — is Asia-Pacific the fastest-growing market?</li>
+            <li>How do you think about the truck/van unloading opportunity you flagged for 2025?</li>
+        </ul>
+    </section>
+
+    <footer style="margin-top:2rem;padding-top:1rem;border-top:1px solid var(--border);font-size:0.8rem;color:var(--text-light);">
+        <p>Generated Mar 5, 2026 · Sources linked inline · <a href="../index.html">← All Briefs</a></p>
+    </footer>
+</body>
+</html>
