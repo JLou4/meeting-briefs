@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kent Lindstrom — 8-Bit Capital | Meeting Brief</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        :root {
+            --primary: #1a1a2e;
+            --accent: #4a6fa5;
+            --bg: #fafafa;
+            --card-bg: #ffffff;
+            --text: #2d3436;
+            --text-light: #636e72;
+            --border: #e0e0e0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid var(--primary);
+        }
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        h1 { font-size: 2rem; color: var(--primary); margin-bottom: 0.25rem; }
+        .subtitle { color: var(--text-light); font-size: 1.1rem; }
+        .meta { font-size: 0.85rem; color: var(--text-light); margin-top: 0.5rem; }
+        .badge {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        section {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        h3 {
+            font-size: 1rem;
+            color: var(--primary);
+            margin: 1rem 0 0.5rem;
+        }
+        h3:first-child { margin-top: 0; }
+        ul { margin-left: 1.25rem; }
+        li { margin-bottom: 0.4rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
+        .stat { text-align: center; padding: 1rem; background: var(--bg); border-radius: 6px; }
+        .stat-value { font-size: 1.75rem; font-weight: 700; color: var(--primary); }
+        .stat-label { font-size: 0.85rem; color: var(--text-light); }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 0.6rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { font-weight: 600; color: var(--text-light); font-size: 0.85rem; text-transform: uppercase; }
+        .source {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.75rem;
+            vertical-align: super;
+            cursor: help;
+        }
+        .source:hover { text-decoration: underline; }
+        .highlight { background: #fff3cd; padding: 0.15rem 0.3rem; border-radius: 3px; }
+        .links { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem; }
+        .links a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .links a:hover { text-decoration: underline; }
+        .quote {
+            border-left: 3px solid var(--accent);
+            padding-left: 1rem;
+            font-style: italic;
+            color: var(--text-light);
+            margin: 1rem 0;
+        }
+        @media (max-width: 600px) {
+            body { padding: 1rem; }
+            h1 { font-size: 1.5rem; }
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div>
+                <h1>Kent Lindstrom</h1>
+                <div class="subtitle">Co-founder & General Partner, 8-Bit Capital</div>
+                <div class="meta">San Francisco, CA · MBA, Kellogg (Northwestern) · CFA · Guest Lecturer, Harvard Business School</div>
+                <div class="links">
+                    <a href="https://www.linkedin.com/in/kentlindstrom/" target="_blank">LinkedIn</a>
+                    <a href="https://twitter.com/kentlind" target="_blank">@kentlind</a>
+                    <a href="https://8bitcapital.com/" target="_blank">8-Bit Capital</a>
+                    <a href="https://somethingventured.us/" target="_blank">Something Ventured Podcast</a>
+                    <a href="https://kentlindstrom.com/" target="_blank">Personal Site</a>
+                </div>
+            </div>
+            <span class="badge">VC / Pre-Seed & Seed</span>
+        </div>
+    </header>
+
+    <section>
+        <h2>TL;DR</h2>
+        <p>Kent is a <span class="highlight">serial operator turned investor</span> with deep roots in the early social networking era. He was the first management hire at <strong>Friendster</strong> — serving as COO, CFO, and CEO — giving him firsthand experience with network effects before Facebook existed.<a href="https://8bitcapital.com/team/kent-lindstrom/" class="source" title="8-Bit Capital Bio">¹</a> He later served as COO of <strong>Nuzzel</strong> (acquired by Twitter) alongside co-founder <strong>Jonathan Abrams</strong> (Friendster founder), and the two launched 8-Bit Capital in 2020.<a href="https://www.crunchbase.com/organization/8-bit-capital" class="source" title="Crunchbase">²</a> Kent hosts <strong>Something Ventured</strong>, a Silicon Valley podcast named one of Fortune's "Best Business Podcasts," which doubles as an intelligence network for deal sourcing.<a href="https://kentlindstrom.com/" class="source" title="KentLindstrom.com">³</a> Background includes Deloitte (tech/healthcare valuation), a CFA designation, and an MBA from Kellogg — unusually finance-rigorous for an early-stage VC.</p>
+    </section>
+
+    <section>
+        <h2>8-Bit Capital</h2>
+        <div class="grid">
+            <div class="stat">
+                <div class="stat-value">2020</div>
+                <div class="stat-label">Founded</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">Pre-Seed / Seed</div>
+                <div class="stat-label">Stage Focus</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">$100K–$1M</div>
+                <div class="stat-label">Check Size</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">SF-Based</div>
+                <div class="stat-label">Location</div>
+            </div>
+        </div>
+
+        <h3>Investment Thesis</h3>
+        <p>"Software tools and platforms that use the power of networks."<a href="https://8bitcapital.com/" class="source" title="8-Bit Capital">⁴</a></p>
+        <ul>
+            <li>Focus on <strong>AI, cloud, cybersecurity, enterprise, fintech, and social</strong><a href="https://8bitcapital.com/" class="source" title="8-Bit Capital">⁴</a></li>
+            <li>Network effects are the through-line — both partners built and operated network-effect businesses (Friendster, Nuzzel)</li>
+            <li>Deal sourcing via Abrams' <strong>Founders Den</strong> co-working space (home to top startups and VCs) and Kent's podcast network<a href="https://www.vcsheet.com/fund/8-bit-capital" class="source" title="VC Sheet">⁵</a></li>
+            <li>Operator-investor model — both partners have built companies, not just funded them</li>
+        </ul>
+
+        <h3>Notable Portfolio & Exits</h3>
+        <table>
+            <tr><th>Company</th><th>Notes</th></tr>
+            <tr><td>Ozz (acquired by Datadog)</td><td>Exit via acquisition<a href="https://8bitcapital.com/portfolio/" class="source" title="8-Bit Portfolio">⁶</a></td></tr>
+            <tr><td>DocSend (acquired by Dropbox)</td><td>Exit via acquisition<a href="https://8bitcapital.com/portfolio/" class="source" title="8-Bit Portfolio">⁶</a></td></tr>
+            <tr><td>CloudFence</td><td>Network management / cybersecurity<a href="https://pitchbook.com/profiles/investor/343379-44" class="source" title="PitchBook">⁷</a></td></tr>
+            <tr><td>Glue</td><td>Communication software<a href="https://pitchbook.com/profiles/investor/343379-44" class="source" title="PitchBook">⁷</a></td></tr>
+            <tr><td>Superpanel</td><td>Business/productivity software<a href="https://pitchbook.com/profiles/investor/343379-44" class="source" title="PitchBook">⁷</a></td></tr>
+        </table>
+
+        <h3>Team</h3>
+        <ul>
+            <li><strong>Jonathan Abrams</strong> — Co-founder & GP. Founded Friendster (one of the first social networks), Nuzzel (acquired by Twitter), and Founders Den. Engineer-entrepreneur.<a href="https://8bitcapital.com/team/jonathan-abrams/" class="source" title="8-Bit Capital">⁸</a></li>
+            <li>Kent & Jonathan have worked together for <strong>20+ years</strong> across Friendster → Nuzzel → 8-Bit — a rare multi-decade GP partnership<a href="https://www.vcsheet.com/fund/8-bit-capital" class="source" title="VC Sheet">⁵</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Background</h2>
+        <ul>
+            <li><strong>Friendster</strong> — Early advisor/investor, then first management hire. Served as COO, CFO, and CEO. Pioneering social network (pre-Facebook)<a href="https://8bitcapital.com/team/kent-lindstrom/" class="source" title="8-Bit Capital Bio">¹</a></li>
+            <li><strong>Nuzzel</strong> — COO. Social news aggregator backed by a16z, CRV, Homebrew, Lowercase Capital, Uncork, Marc Benioff, Max Levchin. Acquired by Twitter<a href="https://8bitcapital.com/team/kent-lindstrom/" class="source" title="8-Bit Capital Bio">¹</a></li>
+            <li><strong>Neo (Digital Garage)</strong> — COO of global software division, which merged with Pivotal<a href="https://kentlindstrom.com/" class="source" title="KentLindstrom.com">³</a></li>
+            <li><strong>Ooga Labs</strong> — Worked with James Currier (NFX) and Stan Chudnovsky (VP Messenger, Meta)<a href="https://8bitcapital.com/team/kent-lindstrom/" class="source" title="8-Bit Capital Bio">¹</a></li>
+            <li><strong>PlacePop</strong> — Founded mobile app startup<a href="https://www.crunchbase.com/person/kent-lindstrom-2" class="source" title="Crunchbase">⁹</a></li>
+            <li><strong>NetRead</strong> — Co-founded first commercial eBook metadata conversion company<a href="https://8bitcapital.com/team/kent-lindstrom/" class="source" title="8-Bit Capital Bio">¹</a></li>
+            <li><strong>Deloitte</strong> — Operating exec in tech/healthcare sectors, led west coast finance & valuation practice<a href="https://8bitcapital.com/team/kent-lindstrom/" class="source" title="8-Bit Capital Bio">¹</a></li>
+        </ul>
+
+        <h3>Education & Credentials</h3>
+        <ul>
+            <li><strong>MBA</strong> — Kellogg School of Management, Northwestern University</li>
+            <li><strong>CFA</strong> — Chartered Financial Analyst designation</li>
+            <li><strong>Guest Lecturer</strong> — Harvard Business School</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Kent's Worldview & Interests</h2>
+        <ul>
+            <li><strong>Autonomous vehicles:</strong> Strong advocate for AV technology, particularly Waymo's safety profile in SF. Frequently highlights data showing human drivers are far more dangerous than AVs<a href="https://www.vcsheet.com/who/kent-lindstrom" class="source" title="VC Sheet">⁵</a></li>
+            <li><strong>SF urban development:</strong> Engaged with local construction and neighborhood development (Mission District). Pays attention to how infrastructure impacts community and business<a href="https://www.vcsheet.com/who/kent-lindstrom" class="source" title="VC Sheet">⁵</a></li>
+            <li><strong>Risk-taking in VC:</strong> Pushes back against investors who boast about low loss ratios — believes real risk-taking is essential. Values founders who navigated non-traditional paths<a href="https://www.vcsheet.com/who/kent-lindstrom" class="source" title="VC Sheet">⁵</a></li>
+            <li><strong>Tech cycles:</strong> Draws parallels between AI boom and dot-com/fiber optic eras. Notes that infrastructure layers enable massive applications later — Netflix profited more from fiber than providers did<a href="https://www.vcsheet.com/who/kent-lindstrom" class="source" title="VC Sheet">⁵</a></li>
+        </ul>
+
+        <div class="quote">
+            "People far overestimate the chances of success from the beginning."
+            — Kent Lindstrom, Esquire (2015)<a href="https://www.esquire.com/lifestyle/a33496/friendster-jonathan-abrams/" class="source" title="Esquire">¹⁰</a>
+        </div>
+    </section>
+
+    <section>
+        <h2>The Friendster Story — Context</h2>
+        <p>Friendster launched in 2002 as one of the world's first social networks, reaching <strong>115 million users</strong> before Facebook existed. Kent was there from the start — early advisor, then first management hire, eventually running the company as CEO. The experience of watching a pioneering network-effect business rise and struggle (eventually pivoting to gaming in Asia) gives Kent a rare vantage point on <strong>what makes network effects work and what kills them</strong>.</p>
+        <p>His co-founder Jonathan Abrams <em>founded</em> Friendster. The fact that they're still building together 20+ years later — through Friendster, Nuzzel, and now 8-Bit — says something about the partnership's durability.</p>
+    </section>
+
+    <section>
+        <h2>Something Ventured Podcast</h2>
+        <ul>
+            <li>Named one of <strong>Fortune's "Best Business Podcasts"</strong><a href="https://kentlindstrom.com/" class="source" title="KentLindstrom.com">³</a></li>
+            <li>Behind-the-scenes interviews with Silicon Valley insiders</li>
+            <li>Functions as a <strong>deal-sourcing and intelligence network</strong> — guests include top investors and founders, building relationships that inform 8-Bit's investing<a href="https://www.vcsheet.com/who/kent-lindstrom" class="source" title="VC Sheet">⁵</a></li>
+            <li>Recent episode featured <strong>Kobie Fuller</strong> on AI's potential to augment enterprise software (cited portfolio company 1Up reducing RFP completion from weeks to minutes)<a href="https://somethingventured.us/author/kent/" class="source" title="Something Ventured">¹¹</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Volunteer & Community</h2>
+        <ul>
+            <li><strong>Board Member</strong> — Theater Artaud (arts & culture, San Francisco)</li>
+            <li>Holds <strong>2 US patents</strong> related to social network content tracking and feed updates (US 8694542, US 8,037,093) — from Friendster era</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Conversation Starters</h2>
+        <ul>
+            <li>You lived through the entire arc of social networking from Friendster to today. With AI agents now forming their own "social networks," do you see parallels to the early social web? What would you do differently?</li>
+            <li>Your tech-cycle thesis — AI infrastructure enabling future applications the way fiber enabled Netflix. What infrastructure layer do you think is most undervalued right now?</li>
+            <li>How does the Something Ventured podcast factor into deal sourcing? Has a guest conversation ever directly led to an investment?</li>
+            <li>You push back on VCs who brag about low loss ratios. What does a healthy loss ratio actually look like at pre-seed/seed?</li>
+            <li>You and Jonathan have worked together for 20+ years. What makes a GP partnership survive that long?</li>
+            <li>Waymo and AVs — you seem bullish. Is this an investment thesis area or a personal interest? Would 8-Bit invest in AV-adjacent startups?</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Relevance to Tomales Bay Capital</h2>
+        <ul>
+            <li><strong>Direct thesis overlap:</strong> 8-Bit invests in AI, cybersecurity, and enterprise at pre-seed/seed — same stage and sector focus as Tomales Bay</li>
+            <li><strong>SF-based:</strong> Both in San Francisco — local network, co-investment, and deal-sharing potential</li>
+            <li><strong>Complementary sourcing:</strong> Kent's podcast network + Abrams' Founders Den community provide deal flow channels you likely don't overlap with</li>
+            <li><strong>Operator credibility:</strong> Unlike pure financial VCs, Kent has been CEO/COO of multiple companies — he speaks founder language, which aligns with Tomales Bay's approach</li>
+            <li><strong>Network effects expertise:</strong> If you're seeing AI/deep-tech deals with network-effect dynamics, Kent is an ideal co-investor given his Friendster/Nuzzel pedigree</li>
+            <li><strong>Check size compatibility:</strong> $100K–$1M checks at pre-seed/seed — likely syndicatable with your fund size</li>
+        </ul>
+    </section>
+
+    <footer style="margin-top:2rem;padding-top:1rem;border-top:1px solid var(--border);font-size:0.8rem;color:var(--text-light);">
+        <p>Generated March 11, 2026 · Sources linked inline · <a href="../index.html">← All Briefs</a></p>
+    </footer>
+</body>
+</html>
