@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Yuan — Nexus Intelligence | Meeting Brief</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        :root {
+            --primary: #1a1a2e;
+            --accent: #4a6fa5;
+            --bg: #fafafa;
+            --card-bg: #ffffff;
+            --text: #2d3436;
+            --text-light: #636e72;
+            --border: #e0e0e0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid var(--primary);
+        }
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        h1 { font-size: 2rem; color: var(--primary); margin-bottom: 0.25rem; }
+        .subtitle { color: var(--text-light); font-size: 1.1rem; }
+        .meta { font-size: 0.85rem; color: var(--text-light); margin-top: 0.5rem; }
+        .badge {
+            display: inline-block;
+            background: #2d8659;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        section {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        h3 {
+            font-size: 1rem;
+            color: var(--primary);
+            margin: 1rem 0 0.5rem;
+        }
+        h3:first-child { margin-top: 0; }
+        ul { margin-left: 1.25rem; }
+        li { margin-bottom: 0.4rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
+        .stat { text-align: center; padding: 1rem; background: var(--bg); border-radius: 6px; }
+        .stat-value { font-size: 1.75rem; font-weight: 700; color: var(--primary); }
+        .stat-label { font-size: 0.85rem; color: var(--text-light); }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 0.6rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { font-weight: 600; color: var(--text-light); font-size: 0.85rem; text-transform: uppercase; }
+        .source {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.75rem;
+            vertical-align: super;
+            cursor: help;
+        }
+        .source:hover { text-decoration: underline; }
+        .highlight { background: #fff3cd; padding: 0.15rem 0.3rem; border-radius: 3px; }
+        .links { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem; }
+        .links a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .links a:hover { text-decoration: underline; }
+        .quote {
+            border-left: 3px solid var(--accent);
+            padding-left: 1rem;
+            font-style: italic;
+            color: var(--text-light);
+            margin: 1rem 0;
+        }
+        @media (max-width: 600px) {
+            body { padding: 1rem; }
+            h1 { font-size: 1.5rem; }
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div>
+                <h1>Chris Yuan</h1>
+                <div class="subtitle">CEO & Founder, Nexus Intelligence</div>
+                <div class="meta">San Francisco, CA · Stanford University · Ex-Tesla Manufacturing · COMAP Outstanding Winner (2014)</div>
+                <div class="links">
+                    <a href="https://www.linkedin.com/in/cqyuan/" target="_blank">LinkedIn</a>
+                    <a href="https://getnexus.ai/" target="_blank">Nexus Intelligence</a>
+                </div>
+            </div>
+            <span class="badge">Company / Industrial AI</span>
+        </div>
+    </header>
+
+    <section>
+        <h2>TL;DR</h2>
+        <p>Chris is building <span class="highlight">the GitHub Copilot for industrial automation</span>. <strong>Nexus Intelligence</strong> is an AI-powered engineering & ops platform for industrial automation — specifically, an AI copilot that writes, explains, and tests PLC code in IEC-61131-3 languages (Ladder Logic, Structured Text).<a href="https://getnexus.ai/" class="source" title="Nexus Intelligence">¹</a> The insight came from Chris's time as a <strong>software engineer at Tesla</strong>, where he found that manufacturing systems ran on aging, vendor-locked software tools — a stark contrast to the cutting-edge tools used for vehicle software.<a href="https://www.linkedin.com/in/cqyuan/" class="source" title="LinkedIn">²</a> Founded in 2024, backed by <strong>Andreessen Horowitz and BoxGroup</strong>.<a href="https://getnexus.ai/company" class="source" title="Nexus Company">³</a> Stanford educated. Won the COMAP Mathematical Contest in Modeling as an undergraduate (one of two American winners among 7,000 teams).<a href="https://www.linkedin.com/in/cqyuan/" class="source" title="LinkedIn">²</a></p>
+    </section>
+
+    <section>
+        <h2>The Company</h2>
+        <div class="grid">
+            <div class="stat">
+                <div class="stat-value">2024</div>
+                <div class="stat-label">Founded</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">a16z + BoxGroup</div>
+                <div class="stat-label">Investors</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">Industrial AI</div>
+                <div class="stat-label">Category</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">San Francisco</div>
+                <div class="stat-label">HQ</div>
+            </div>
+        </div>
+
+        <h3>What They Build</h3>
+        <ul>
+            <li><strong>Nexus Copilot:</strong> An open, vendor-agnostic design environment built on VS Code that uses LLMs tuned for IEC-61131-3 languages (Ladder Logic, Structured Text, etc.) to help engineers write, explain, and test PLC code<a href="https://getnexus.ai/" class="source" title="Nexus Intelligence">¹</a></li>
+            <li><strong>Coding Agents:</strong> State-of-the-art LLMs fine-tuned to natively output industrial control languages — not just general-purpose code<a href="https://getnexus.ai/" class="source" title="Nexus Intelligence">¹</a></li>
+            <li><strong>Ops Agents:</strong> AI assistants that continuously monitor PLCs, historian data, and CMMS history to analyze context, recommend next steps, and execute actions<a href="https://getnexus.ai/" class="source" title="Nexus Intelligence">¹</a></li>
+            <li><strong>PLC Integration:</strong> Full import/export support for Rockwell Studio 5000 ACD/L5X files, with more platforms coming<a href="https://getnexus.ai/" class="source" title="Nexus Intelligence">¹</a></li>
+            <li><strong>Standards Customization:</strong> Organizations can define naming conventions, code standards, and upload reference documentation to customize the AI per-project<a href="https://getnexus.ai/" class="source" title="Nexus Intelligence">¹</a></li>
+        </ul>
+
+        <h3>Target Customers</h3>
+        <ul>
+            <li>Manufacturers</li>
+            <li>System integrators</li>
+            <li>Equipment OEMs</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>The Problem</h2>
+        <div class="quote">
+            "As a software engineer working on manufacturing systems at Tesla, I expected to have cutting-edge tools for manufacturing systems, just as we did for vehicle software. The reality was quite different! Instead, increasingly complex equipment is being built, operated, and maintained using aging, vendor-locked software tools and PLC platforms."
+            — Chris Yuan, LinkedIn<a href="https://www.linkedin.com/in/cqyuan/" class="source" title="LinkedIn">²</a>
+        </div>
+        <ul>
+            <li><strong>Aging toolchains:</strong> Industrial automation still relies on proprietary, decades-old IDE environments from Rockwell, Siemens, etc.</li>
+            <li><strong>Vendor lock-in:</strong> Each PLC platform has its own tooling — no unified development environment</li>
+            <li><strong>Labor shortage:</strong> Controls engineers are in critical short supply; experienced PLC programmers are retiring faster than they're being replaced</li>
+            <li><strong>Rising complexity:</strong> Automated manufacturing equipment is getting more complex, but the tools haven't kept up</li>
+            <li><strong>Cost of production:</strong> All of this drives up manufacturing costs and makes it harder to build products locally (reshoring challenge)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Chris Yuan — Background</h2>
+        <ul>
+            <li><strong>Tesla</strong> — Software engineer, manufacturing systems. Saw firsthand the gap between cutting-edge vehicle software tools and primitive manufacturing toolchains<a href="https://www.linkedin.com/in/cqyuan/" class="source" title="LinkedIn">²</a></li>
+            <li><strong>Stanford University</strong> — Education<a href="https://www.linkedin.com/in/cqyuan/" class="source" title="LinkedIn">²</a></li>
+            <li><strong>COMAP Mathematical Contest in Modeling</strong> — Outstanding Winner (2014). One of two American winners among 7,000 participating teams. Won both MAA and INFORMS special awards<a href="https://www.linkedin.com/in/cqyuan/" class="source" title="LinkedIn">²</a></li>
+        </ul>
+
+        <h3>The Profile</h3>
+        <p>Technically exceptional (Stanford, COMAP winner, Tesla engineering), with the specific domain insight that matters: he worked inside a world-class manufacturer and saw the tooling problem firsthand. This is the classic "domain expert who saw the gap" founder profile — exactly what investors like Nic Poulos at Euclid would call a vertical AI founder.</p>
+    </section>
+
+    <section>
+        <h2>Why This Matters — Market Context</h2>
+        <ul>
+            <li><strong>Industrial automation market:</strong> ~$200B+ globally, growing with reshoring trends, Industry 4.0, and smart manufacturing adoption</li>
+            <li><strong>Controls engineer shortage:</strong> The average PLC programmer in the US is 50+. There's a genuine generational cliff in this skillset</li>
+            <li><strong>Reshoring tailwind:</strong> US/EU push to bring manufacturing back creates massive demand for automation — but building and maintaining automated production lines requires controls engineers that don't exist in sufficient numbers</li>
+            <li><strong>AI coding tools proven:</strong> GitHub Copilot, Cursor, etc. have proven the AI coding assistant model for general software. Industrial languages (Ladder Logic, Structured Text) are the next frontier — less training data, higher value per line of code</li>
+            <li><strong>Vendor-agnostic positioning:</strong> By sitting above the PLC platforms (Rockwell, Siemens, Beckhoff, etc.) rather than replacing them, Nexus avoids the near-impossible task of displacing entrenched hardware ecosystems</li>
+            <li><strong>a16z backing:</strong> Strong signal. a16z's American Dynamism fund explicitly invests in companies rebuilding critical American infrastructure — industrial automation fits perfectly</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Competitive Landscape</h2>
+        <ul>
+            <li><strong>Incumbent IDEs:</strong> Rockwell Studio 5000, Siemens TIA Portal, Beckhoff TwinCAT — proprietary, vendor-locked, no AI capabilities</li>
+            <li><strong>General AI code tools:</strong> GitHub Copilot, Cursor, Codeium — don't support IEC-61131-3 languages or industrial workflows</li>
+            <li><strong>Nexus's edge:</strong> Purpose-built LLMs for industrial languages + vendor-agnostic platform + deep understanding of controls engineering workflows. The moat is domain-specific fine-tuning and integration with actual PLC file formats</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Relevance to Tomales Bay Capital</h2>
+        <ul>
+            <li><strong>Direct thesis fit:</strong> AI + deep-tech + manufacturing infrastructure = core Tomales Bay territory. This is vertical AI applied to critical industrial automation</li>
+            <li><strong>Reshoring / defense angle:</strong> Industrial automation is a national security concern. The US can't reshore manufacturing without solving the controls engineer shortage. Nexus addresses this with AI</li>
+            <li><strong>a16z American Dynamism overlap:</strong> Same worldview — rebuilding American industrial capacity with technology</li>
+            <li><strong>AI applied to hard problems:</strong> Not another chatbot wrapper. This is AI fine-tuned for a specialized domain (PLC programming) where the training data is scarce and the value per-output is extremely high</li>
+            <li><strong>Labor shortage moat:</strong> Unlike SaaS tools competing for oversupplied software developers, Nexus addresses a genuine labor shortage in a critical field — makes adoption almost inevitable as experienced controls engineers retire</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Key Questions</h2>
+        <ul>
+            <li>How far along is the LLM fine-tuning for IEC-61131-3 languages? What's the quality of generated Ladder Logic vs. Structured Text? How do you get training data for such a niche domain?</li>
+            <li>What does the sales motion look like? Are you selling to the plant floor (bottom-up, individual engineers) or enterprise (top-down, CTO/VP Engineering)?</li>
+            <li>How do customers react to AI-generated PLC code? In safety-critical manufacturing environments, trust is everything — how do you handle validation and certification?</li>
+            <li>Rockwell and Siemens will eventually build AI into their own IDEs. How do you win against the incumbents when they catch up? Is vendor-agnostic enough of a moat?</li>
+            <li>What's the GTM for system integrators specifically? They seem like the highest-leverage customer — they touch dozens of plants and equipment types</li>
+            <li>You exhibited at Automate Show in Detroit. What was the reception from actual controls engineers? Are they excited or skeptical?</li>
+        </ul>
+    </section>
+
+    <footer style="margin-top:2rem;padding-top:1rem;border-top:1px solid var(--border);font-size:0.8rem;color:var(--text-light);">
+        <p>Generated March 12, 2026 · Sources linked inline · <a href="../index.html">← All Briefs</a></p>
+    </footer>
+</body>
+</html>
