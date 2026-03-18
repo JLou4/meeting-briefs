@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Daudy | Meeting Brief</title>
+    <style>
+        :root {
+            --primary: #1a1a2e;
+            --accent: #16a34a;
+            --bg: #fafafa;
+            --card-bg: #ffffff;
+            --text: #2d3436;
+            --text-light: #636e72;
+            --border: #e0e0e0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid var(--primary);
+        }
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        h1 { font-size: 2rem; color: var(--primary); margin-bottom: 0.25rem; }
+        .subtitle { color: var(--text-light); font-size: 1.1rem; }
+        .meta { font-size: 0.85rem; color: var(--text-light); margin-top: 0.5rem; }
+        .meta a { color: var(--accent); text-decoration: none; }
+        .meta a:hover { text-decoration: underline; }
+        .badge {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        .badge-eton {
+            background: #1e3a5f;
+        }
+        section {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        h3 {
+            font-size: 1rem;
+            color: var(--primary);
+            margin: 1rem 0 0.5rem;
+        }
+        h3:first-child { margin-top: 0; }
+        ul { margin-left: 1.25rem; }
+        li { margin-bottom: 0.4rem; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 1rem; }
+        th, td { padding: 0.6rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { font-weight: 600; color: var(--text-light); font-size: 0.85rem; text-transform: uppercase; }
+        .callout {
+            background: #f0fdf4;
+            border-left: 3px solid var(--accent);
+            padding: 1rem;
+            margin: 1rem 0;
+            font-style: italic;
+        }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        sup { font-size: 0.7rem; color: var(--accent); }
+        .sources {
+            background: var(--bg);
+            border-radius: 6px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+        .sources ol { margin-left: 1.25rem; font-size: 0.9rem; color: var(--text-light); }
+        .sources li { margin-bottom: 0.3rem; }
+        footer {
+            text-align: center;
+            padding-top: 1.5rem;
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+        @media (max-width: 600px) {
+            body { padding: 1rem; }
+            h1 { font-size: 1.5rem; }
+            section { padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div>
+                <span class="badge">Personal Brief</span>
+                <span class="badge badge-eton">Old Etonian</span>
+                <h1>Gabriel Daudy</h1>
+                <p class="subtitle">Data Science & Economics · University of Chicago '27</p>
+                <p class="meta">
+                    <a href="https://www.linkedin.com/in/gabriel-d-914104204/" target="_blank">LinkedIn</a>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <h2>👤 Profile</h2>
+        <table>
+            <tr><th>School</th><td>University of Chicago, Class of 2027 (currently sophomore/junior)</td></tr>
+            <tr><th>Major</th><td>Data Science and Economics (BS)</td></tr>
+            <tr><th>Prep School</th><td>Eton College (A-Levels) — Jack's alma mater</td></tr>
+            <tr><th>Location</th><td>Chicago, IL</td></tr>
+            <tr><th>Interests</th><td>Technology, big data, and how they reshape the global economy</td></tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>💼 Experience</h2>
+
+        <h3>Capital Markets Intern — Logan Growth Advisors</h3>
+        <ul>
+            <li>Lower middle market M&A advisory firm</li>
+            <li>Helps founder-owned businesses raise capital or sell — debt, equity, and full exits</li>
+            <li>Also conducts financial due diligence on founder-owned businesses for investors</li>
+            <li>Based in Coppell, Texas</li>
+        </ul>
+
+        <h3>ROYC Group</h3>
+        <ul>
+            <li>Private markets infrastructure platform — launches investment vehicles (PE, VC, alternatives) with managed regulatory, governance, and service provider setup</li>
+            <li>Partners with private wealth investors and fund managers</li>
+            <li>Cutting-edge fintech for alternatives</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>🎓 Campus Involvement</h2>
+        <ul>
+            <li><strong>The Blue Chips Investment Club</strong> — Senior Analyst in the Financials sector. The Blue Chips is UChicago's premier student-run investment club; analysts build investment theses, create financial models, and pitch to the Investment Committee quarterly.<sup>1</sup></li>
+            <li><strong>Undergraduate Investment Banking Group</strong></li>
+            <li><strong>ILC Entrepreneurship & Technology Society</strong></li>
+        </ul>
+        <div class="callout">
+            💡 Gabriel is a Senior Analyst in The Blue Chips — one of the more competitive campus finance clubs at UChicago. Shows initiative and analytical rigor beyond just coursework.
+        </div>
+    </section>
+
+    <section>
+        <h2>🤝 Connection Points</h2>
+        <ul>
+            <li><strong>Eton connection</strong> — shared alma mater is the strongest bond. Old Etonian network is tight and global; this is a genuine relationship anchor.</li>
+            <li><strong>Data Science + Economics</strong> — directly relevant to Jack's work. Gabriel understands both the quantitative and market sides. Could be a sharp intern or analyst prospect down the road.</li>
+            <li><strong>Capital markets experience</strong> — already has real deal exposure through Logan Growth Advisors (M&A advisory for founder-owned businesses). Understands the mechanics of raising capital and due diligence.</li>
+            <li><strong>Private markets / alternatives</strong> — ROYC Group exposure means he understands fund structure and LP/GP dynamics, which is unusually sophisticated for a college student.</li>
+            <li><strong>Entrepreneurship interest</strong> — ILC E&T Society membership signals he's not just finance-track; he's thinking about the startup side too.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>💬 Conversation Angles</h2>
+        <ul>
+            <li><strong>Eton days</strong> — who did he have for which teachers, houses, what year group, mutual connections</li>
+            <li><strong>Career trajectory</strong> — is he aiming for IB, VC, or something else? What drew him to data science + econ vs. pure finance?</li>
+            <li><strong>Blue Chips pitches</strong> — what sectors/companies has he pitched? What's his investment thesis style?</li>
+            <li><strong>Views on AI in finance</strong> — given his data science background, how does he see AI reshaping capital markets?</li>
+            <li><strong>Seed investing</strong> — is he curious about the VC/seed world? Could be a useful connection as he enters the workforce</li>
+            <li><strong>Chicago startup scene</strong> — what's he seeing on campus re: student founders, tech companies recruiting, etc.?</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Sources</h2>
+        <div class="sources">
+            <ol>
+                <li><a href="https://www.tbc.uchicago.edu/people" target="_blank">The Blue Chips — People</a></li>
+                <li><a href="https://www.linkedin.com/in/gabriel-d-914104204/" target="_blank">LinkedIn — Gabriel Daudy</a></li>
+                <li><a href="https://www.zoominfo.com/p/Gabriel-Daudy/6560436006" target="_blank">ZoomInfo — Gabriel Daudy</a></li>
+                <li><a href="https://logangrowth.com/" target="_blank">Logan Growth Advisors</a></li>
+                <li><a href="https://www.roycgroup.com/" target="_blank">ROYC Group</a></li>
+            </ol>
+        </div>
+    </section>
+
+    <footer>
+        Generated March 17, 2026 · <a href="../index.html">← All Briefs</a>
+    </footer>
+</body>
+</html>
