@@ -1,5 +1,47 @@
 [
   {
+    "slug": "lila-ibrahim-google-deepmind",
+    "name": "Google DeepMind",
+    "person": "Lila Ibrahim",
+    "type": "person",
+    "date": "Apr 21, 2026"
+  },
+  {
+    "slug": "robert-yin-coatue",
+    "name": "Coatue",
+    "person": "Robert Yin",
+    "type": "person",
+    "date": "Apr 8, 2026"
+  },
+  {
+    "slug": "matt-kozlov-techstars",
+    "name": "Techstars",
+    "person": "Matt Kozlov",
+    "type": "person",
+    "date": "Apr 8, 2026"
+  },
+  {
+    "slug": "ryan-eppley-root-access",
+    "name": "Root Access",
+    "person": "Ryan Eppley",
+    "type": "company",
+    "date": "Apr 3, 2026"
+  },
+  {
+    "slug": "will-helfand-starwood",
+    "name": "Starwood Capital Group",
+    "person": "Will Helfand",
+    "type": "vc",
+    "date": "Apr 2, 2026"
+  },
+  {
+    "slug": "alexander-erikstrup-ratio",
+    "name": "Ratio Ventures",
+    "person": "Alexander Erikstrup",
+    "type": "vc",
+    "date": "Apr 2, 2026"
+  },
+  {
     "slug": "dan-botero-botero-labs",
     "name": "Botero Labs",
     "person": "Dan Botero",
