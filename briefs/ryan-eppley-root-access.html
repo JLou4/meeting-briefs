@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Eppley — Root Access | Meeting Brief</title>
+    <style>
+        :root { --primary: #1a1a2e; --accent: #16a34a; --bg: #fafafa; --card-bg: #ffffff; --text: #2d3436; --text-light: #636e72; --border: #e0e0e0; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; max-width: 900px; margin: 0 auto; }
+        header { margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 2px solid var(--primary); }
+        .header-top { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; }
+        h1 { font-size: 2rem; color: var(--primary); margin-bottom: 0.25rem; }
+        .subtitle { color: var(--text-light); font-size: 1.1rem; }
+        .meta { font-size: 0.85rem; color: var(--text-light); margin-top: 0.5rem; }
+        .meta a { color: var(--accent); text-decoration: none; }
+        .meta a:hover { text-decoration: underline; }
+        .badge { display: inline-block; background: var(--accent); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500; margin-bottom: 0.5rem; margin-right: 0.25rem; }
+        .badge-thesis { background: #7c3aed; }
+        section { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; }
+        h2 { font-size: 1.1rem; color: var(--primary); margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        h3 { font-size: 1rem; color: var(--primary); margin: 1rem 0 0.5rem; }
+        h3:first-child { margin-top: 0; }
+        ul { margin-left: 1.25rem; }
+        li { margin-bottom: 0.4rem; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 1rem; }
+        th, td { padding: 0.6rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { font-weight: 600; color: var(--text-light); font-size: 0.85rem; text-transform: uppercase; }
+        .callout { background: #f0fdf4; border-left: 3px solid var(--accent); padding: 1rem; margin: 1rem 0; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        footer { text-align: center; padding-top: 1.5rem; color: var(--text-light); font-size: 0.85rem; }
+        @media (max-width: 600px) { body { padding: 1rem; } h1 { font-size: 1.5rem; } section { padding: 1rem; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div>
+                <span class="badge">Company Brief</span>
+                <span class="badge badge-thesis">Thesis Fit: Robotics / Defense</span>
+                <h1>Ryan Eppley</h1>
+                <p class="subtitle">Co-Founder & CEO · Root Access</p>
+                <p class="meta">
+                    <a href="https://www.linkedin.com/in/ryan-eppley" target="_blank">LinkedIn</a> ·
+                    New York · Founded 2024
+                </p>
+            </div>
+            <div style="text-align: right; font-size: 0.85rem; color: var(--text-light);">
+                Prepared Apr 3, 2026<br>
+                Tomales Bay Capital
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <h2>Person Background</h2>
+        <table>
+            <tr><th>Role</th><td>Co-Founder & CEO</td></tr>
+            <tr><th>Company</th><td>Root Access</td></tr>
+            <tr><th>CTO</th><td>Samarpita Chowdhury (hardware/embedded background)</td></tr>
+            <tr><th>Background</th><td>Grew up on a farm in PA, always around machines. Varied career, deeply familiar with the hardware/manufacturing world.</td></tr>
+            <tr><th>Location</th><td>New York</td></tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Company Overview — Root Access</h2>
+        <table>
+            <tr><th>Product</th><td><strong>Hideout</strong> — AI-native platform for firmware/embedded development</td></tr>
+            <tr><th>What It Does</th><td>AI agents that configure, integrate, and validate firmware components across embedded systems. Universal IDE for programming hardware.</td></tr>
+            <tr><th>Stage</th><td>Pre-seed ($2M, Sep 2025). AlleyCorp led. Not actively raising yet — ~6 months out from seed.</td></tr>
+            <tr><th>Next Round</th><td>Seed. AlleyCorp already committed to participate.</td></tr>
+            <tr><th>Customers</th><td>Mitsubishi Electric, East West Manufacturing</td></tr>
+            <tr><th>Verticals</th><td>Industrial, robotics, defense, aviation, maritime, communications</td></tr>
+        </table>
+
+        <h3>The Problem</h3>
+        <p>Every machine (John Deere, Mitsubishi Electric, etc.) is assembled from hundreds of small components from different manufacturers. Integrating the firmware across all these components is a nightmare — there's no standardization, and each integration is essentially custom. The number of machines has skyrocketed but the number of firmware/embedded engineers has stayed flat.</p>
+
+        <h3>The Solution</h3>
+        <p>AI agents that automate firmware integration across the long tail of component manufacturers. Not targeting the big vendors (Siemens, Rockwell) like Nexus Intelligence — instead targeting the litany of small component makers. Fully customizable per end customer. Gives existing firmware engineers 10x more leverage.</p>
+
+        <h3>Why It's Hard</h3>
+        <p>Can't open-source integration specs — security risk (e.g., car firmware = break-in vulnerability). Each manufacturer's components are proprietary. Creates a moat but also makes the technical problem harder.</p>
+    </section>
+
+    <section>
+        <h2>Comparison: Root Access vs Nexus Intelligence</h2>
+        <table>
+            <tr><th></th><th>Root Access</th><th>Nexus Intelligence</th></tr>
+            <tr><td><strong>Focus</strong></td><td>Small component manufacturers</td><td>Big industrial vendors (Siemens, Rockwell)</td></tr>
+            <tr><td><strong>Stage</strong></td><td>Earlier — pre-seed</td><td>Further along</td></tr>
+            <tr><td><strong>Problem difficulty</strong></td><td>Harder (long tail, no standards)</td><td>Narrower scope</td></tr>
+            <tr><td><strong>GTM</strong></td><td>Big manufacturer contracts + vendor partnerships</td><td>Enterprise sales to industrials</td></tr>
+            <tr><td><strong>Validation</strong></td><td>Mitsubishi Electric, East West Mfg</td><td>Broader customer set</td></tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Go-to-Market</h2>
+        <ul>
+            <li><strong>Primary:</strong> Big contracts with manufacturers (not per-seat SaaS)</li>
+            <li><strong>Secondary:</strong> Contracts/partnerships with component vendors and systems integrators</li>
+            <li><strong>Pitch to component vendors:</strong> "Help your customers integrate your components faster → you sell more components"</li>
+            <li>Firmware engineers sit at three places: part vendors, manufacturers, systems integrators. Root Access serves all three.</li>
+        </ul>
+        <div class="callout">
+            <strong>American Dynamism angle:</strong> "90% of all actuators in robots made in America are not sourced from American manufacturers." Root Access could help re-shore manufacturing by making integration with American-made components easier.
+        </div>
+    </section>
+
+    <section>
+        <h2>Thesis Fit</h2>
+        <ul>
+            <li><strong>Robotics/Industrial Automation:</strong> Direct fit — firmware is the foundation of every robot and industrial machine</li>
+            <li><strong>Defense:</strong> Supports defense, aviation, maritime embedded systems. ITAR/security implications create barriers to entry.</li>
+            <li><strong>AI Infrastructure:</strong> AI agents applied to a deeply technical domain with real pain points</li>
+            <li><strong>Workforce multiplier:</strong> Addresses structural shortage of firmware engineers — this doesn't get solved by training more people</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Key Takeaways from Meeting</h2>
+        <ul>
+            <li>Not raising now — ~6 months out. AlleyCorp committed to seed already.</li>
+            <li>Earlier and harder than Nexus Intelligence, but consistent engineer validation</li>
+            <li>Real contracts (Mitsubishi, East West) give credibility</li>
+            <li>Ryan is scrappy — farm kid who understands machines intuitively</li>
+            <li>Watch this one. When they raise, it's worth a serious look.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Follow-Ups</h2>
+        <ul>
+            <li>☐ Check in with Ryan when fundraising kicks off (~Oct 2026)</li>
+        </ul>
+    </section>
+
+    <footer>
+        Prepared by Icarus · Tomales Bay Capital
+    </footer>
+</body>
+</html>
