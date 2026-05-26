@@ -1,5 +1,12 @@
 [
   {
+    "slug": "andrea-wong-dinner",
+    "name": "Dinner Brief",
+    "person": "Andrea Wong",
+    "type": "person",
+    "date": "May 26, 2026"
+  },
+  {
     "slug": "lila-ibrahim-google-deepmind",
     "name": "Google DeepMind",
     "person": "Lila Ibrahim",
