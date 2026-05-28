@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh Bloom — Valency | Meeting Brief</title>
+    <style>
+        :root { --primary: #1a1a2e; --accent: #16a34a; --bg: #fafafa; --card-bg: #ffffff; --text: #2d3436; --text-light: #636e72; --border: #e0e0e0; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; max-width: 900px; margin: 0 auto; }
+        header { margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 2px solid var(--primary); }
+        .header-top { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; }
+        h1 { font-size: 2rem; color: var(--primary); margin-bottom: 0.25rem; }
+        .subtitle { color: var(--text-light); font-size: 1.1rem; }
+        .meta { font-size: 0.85rem; color: var(--text-light); margin-top: 0.5rem; }
+        .meta a { color: var(--accent); text-decoration: none; }
+        .meta a:hover { text-decoration: underline; }
+        .badge { display: inline-block; background: var(--accent); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500; margin-bottom: 0.5rem; margin-right: 0.25rem; }
+        .badge-thesis { background: #7c3aed; }
+        .badge-key { background: #dc2626; }
+        section { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; }
+        h2 { font-size: 1.1rem; color: var(--primary); margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        h3 { font-size: 1rem; color: var(--primary); margin: 1rem 0 0.5rem; }
+        h3:first-child { margin-top: 0; }
+        ul { margin-left: 1.25rem; }
+        li { margin-bottom: 0.4rem; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 1rem; }
+        th, td { padding: 0.6rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { font-weight: 600; color: var(--text-light); font-size: 0.85rem; text-transform: uppercase; width: 160px; }
+        .callout { background: #f0fdf4; border-left: 3px solid var(--accent); padding: 1rem; margin: 1rem 0; }
+        .callout-warn { background: #fef3c7; border-left-color: #f59e0b; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .timeline { border-left: 2px solid var(--accent); margin-left: 0.5rem; padding-left: 1.25rem; }
+        .timeline-item { margin-bottom: 1rem; position: relative; }
+        .timeline-item::before { content: ''; position: absolute; left: -1.55rem; top: 0.5rem; width: 10px; height: 10px; background: var(--accent); border-radius: 50%; }
+        .timeline-year { font-size: 0.8rem; color: var(--text-light); font-weight: 600; }
+        .timeline-title { font-weight: 600; }
+        .num-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1rem; }
+        .num-item { text-align: center; padding: 1rem; background: #f8fafc; border-radius: 6px; }
+        .num-value { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
+        .num-label { font-size: 0.8rem; color: var(--text-light); }
+        footer { text-align: center; padding-top: 1.5rem; color: var(--text-light); font-size: 0.85rem; }
+        @media (max-width: 600px) { body { padding: 1rem; } h1 { font-size: 1.5rem; } section { padding: 1rem; } th { width: 120px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div>
+                <span class="badge badge-key">Office Visit</span>
+                <span class="badge badge-thesis">Thesis Fit: AI / Deep-Tech</span>
+                <h1>Josh Bloom</h1>
+                <p class="subtitle">Co-Founder & CEO · Valency</p>
+                <p class="meta">
+                    <a href="https://valency.io" target="_blank">valency.io</a> ·
+                    <a href="https://www.linkedin.com/in/profjsb" target="_blank">LinkedIn</a> ·
+                    <a href="https://joshbloom.org" target="_blank">joshbloom.org</a> ·
+                    Berkeley, CA
+                </p>
+            </div>
+            <div style="text-align: right; font-size: 0.85rem; color: var(--text-light);">
+                Prepared May 28, 2026<br>
+                Tomales Bay Capital
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <h2>At a Glance</h2>
+        <div class="num-grid">
+            <div class="num-item">
+                <div class="num-value">300+</div>
+                <div class="num-label">Refereed Publications</div>
+            </div>
+            <div class="num-item">
+                <div class="num-value">67K+</div>
+                <div class="num-label">Google Scholar Citations</div>
+            </div>
+            <div class="num-item">
+                <div class="num-value">50M+</div>
+                <div class="num-label">Papers in Valency Corpus</div>
+            </div>
+            <div class="num-item">
+                <div class="num-value">1</div>
+                <div class="num-label">Prior Exit (Wise.io → GE)</div>
+            </div>
+        </div>
+        <div class="callout">
+            <strong>Key fact:</strong> Josh Bloom is the Co-founder & CEO of Valency — not just a Berkeley professor with a connection. His previous company Wise.io (ML platform) was acquired by GE Digital in 2016. This is a repeat founder with a clean exit building in a domain he's spent 15+ years in.
+        </div>
+    </section>
+
+    <section>
+        <h2>Person Background</h2>
+        <table>
+            <tr><th>Full Name</th><td>Joshua S. Bloom</td></tr>
+            <tr><th>Born</th><td>1974, Washington D.C.</td></tr>
+            <tr><th>Education</th><td>AB Harvard (magna cum laude, 1996) → MPhil Cambridge (1997) → PhD Caltech (2002) → Junior Fellow, Harvard Society of Fellows (2002–2005)</td></tr>
+            <tr><th>Faculty</th><td>Professor of Astronomy, UC Berkeley (since ~2005)</td></tr>
+            <tr><th>Former Chair</th><td>UC Berkeley Astronomy Department (2020–2023)</td></tr>
+            <tr><th>Research</th><td>Time-domain astronomy, ML/AI for astrophysics, gamma-ray bursts, telescope automation</td></tr>
+            <tr><th>Awards</th><td>Newton Lacy Pierce Prize (AAS) · Moore Foundation Fellow · Sloan Fellow · Two Sigma Faculty Research Award · Brahe Visiting Professor</td></tr>
+            <tr><th>Lab</th><td><a href="https://www.ml4science.org" target="_blank">ML4Science</a> at Berkeley — monthly AI/ML seminar for astrophysics</td></tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Career Arc</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-year">1996–2005</div>
+                <div class="timeline-title">Academic foundation</div>
+                <div>Harvard AB → Cambridge MPhil → Caltech PhD → Harvard Society Junior Fellow. GRB research, established as a top-cited astrophysicist.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">~2005–present</div>
+                <div class="timeline-title">UC Berkeley Faculty</div>
+                <div>Professor of Astronomy. Built ML4Science lab. Chaired department 2020–2023. Miller Professor 2023–2024. Co-created SkyPortal platform. Co-chaired LSST/Rubin Observatory transients collaboration.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2012–2016</div>
+                <div class="timeline-title">Wise.io — Co-founder & CTO</div>
+                <div>ML applications startup spun out of Berkeley research. Clients: Pinterest, Twilio. <strong>Acquired by GE Digital, November 2016.</strong></div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2016–~2018</div>
+                <div class="timeline-title">GE Digital — VP of Data & Analytics</div>
+                <div>Led ML applications across the Predix industrial IoT platform post-acquisition.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">Current</div>
+                <div class="timeline-title">Valency — Co-founder & CEO</div>
+                <div>Building AI-accelerated research infrastructure. 50M+ papers, MCP-native, real-time corpus. VC-backed, currently hiring.</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Valency — The Company</h2>
+        <table>
+            <tr><th>Position</th><td>"People-centered, AI-accelerated research"</td></tr>
+            <tr><th>Co-founders</th><td>Josh Bloom (CEO) & Ryan Anderson</td></tr>
+            <tr><th>Product</th><td>MCP service connecting LLMs to 50M+ academic papers & preprints — semantic search + citation graph + author profiling in one token-efficient interface</td></tr>
+            <tr><th>Key Problem</th><td>LLMs hallucinate scientific citations. arXiv announced a <strong>1-year ban</strong> for authors submitting papers with hallucinated refs (May 2026). The grounding layer is now existential.</td></tr>
+            <tr><th>Tech</th><td>38 MCP endpoints across 8 categories. Real-time corpus (papers indexed within hours of publication). Designed for LLM consumption, not just human browsing.</td></tr>
+            <tr><th>Distribution</th><td>Partnership with Lawrence Berkeley National Lab (Peter Nugent endorsement). Wedge into DOE national laboratory system (~$20B/yr R&D spend).</td></tr>
+            <tr><th>Funding</th><td>VC-backed (details not publicly disclosed)</td></tr>
+            <tr><th>Status</th><td>Live product, actively hiring</td></tr>
+        </table>
+
+        <h3>Use Cases Beyond Academia</h3>
+        <ul>
+            <li><strong>Pharma & Biotech R&D:</strong> Drug discovery teams searching prior art across chemistry, biology, clinical lit in real time. Regulatory submissions grounded in current evidence.</li>
+            <li><strong>Patent & IP:</strong> Prior art searches on actual papers, not LLM guesses. Freedom-to-operate analysis.</li>
+            <li><strong>VC / Deep-Tech Investing:</strong> Due diligence on scientific claims. Map citation graphs to assess IP defensibility. Track research trends before they become startups.</li>
+            <li><strong>Corporate R&D:</strong> Connect internal research to global knowledge base without exposing proprietary data (institutional tier).</li>
+            <li><strong>Government / National Labs:</strong> Intelligence analysts, DoD/DARPA program managers evaluating proposals against state of the art.</li>
+            <li><strong>Consulting:</strong> Technical due diligence for McKinsey/BCG-type firms. Expert network alternative — query the literature instead of paying $1K/hr.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>SkyPortal & Rubin Observatory — Prior Infrastructure Work</h2>
+        <p><strong>SkyPortal</strong> (<a href="https://skyportal.io" target="_blank">skyportal.io</a>) — open-source collaborative platform for time-domain astronomy. Co-created by Bloom. Published in <em>Journal of Open Source Software</em> and <em>Astrophysical Journal Supplement Series</em> (2023). 18 GitHub repos, actively maintained. Used by major survey teams for real-time transient classification and alert brokering.</p>
+        <p style="margin-top: 0.75rem;"><strong>LSST/Vera C. Rubin Observatory:</strong> Bloom co-chaired the Transients and Variable Stars science collaboration — one of the most important working groups for the $700M+ telescope that will scan the entire visible sky every few nights (~10M transient alerts per night).</p>
+        <div class="callout">
+            <strong>Pattern:</strong> Bloom built infrastructure to handle massive scientific data flows before (SkyPortal for astronomy) → now doing it for all of science (Valency). Same playbook: data infrastructure layer enabling collaborative analysis at scale.
+        </div>
+    </section>
+
+    <section>
+        <h2>Ecosystem & Network</h2>
+        <ul>
+            <li><strong>Two Sigma:</strong> Faculty Research Award (2019) — quantitative finance/data science connection</li>
+            <li><strong>GE ecosystem:</strong> Deep enterprise/industrial ML network from VP tenure</li>
+            <li><strong>National labs:</strong> Valency built with Lawrence Berkeley Lab researchers; strong DOE connections</li>
+            <li><strong>Berkeley ML pipeline:</strong> ML4Science lab + Python for Data Science course = talent funnel</li>
+            <li><strong>Mattiq:</strong> Scientific Advisory Board (AI + materials science for decarbonization, Northwestern spinout)</li>
+            <li><strong>Angel/advisory:</strong> Crunchbase lists investor/advisor activity beyond his own companies</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Why Jack Should Care</h2>
+        <ol>
+            <li><strong>Repeat founder with a clean exit.</strong> Wise.io → GE proves he can take academic ML to commercial acquisition. Not a first-timer.</li>
+            <li><strong>The arXiv hallucination crisis is a real market.</strong> 35M researchers worldwide. Journals banning AI-generated refs. Grounding layer is now existential infrastructure.</li>
+            <li><strong>Incumbents are weak.</strong> Semantic Scholar (nonprofit). Google Scholar (stagnant). Elsevier (legacy). The LLM-native research infrastructure layer is wide open.</li>
+            <li><strong>Domain expertise IS the moat.</strong> Not a tech founder bolting AI onto science — he's a top-cited scientist with 15+ years of ML-for-science tools. SkyPortal → Valency is natural evolution.</li>
+            <li><strong>National lab partnerships = distribution.</strong> Embedded with Lawrence Berkeley Lab → wedge into entire DOE national laboratory system (~$20B/yr R&D).</li>
+            <li><strong>Thesis fit.</strong> AI infrastructure × deep-tech × knowledge grounding — sits at the intersection of what Tomales Bay invests in.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Other Notes</h2>
+        <ul>
+            <li>Authored <em>What Are Gamma-Ray Bursts?</em> (Princeton University Press, 2011) — the standard technical reference</li>
+            <li>Co-creator of the VOEvent messaging protocol for astronomical transients</li>
+            <li>Created CuratingAI art exhibition (2024) — intersection of ML and creative work</li>
+            <li>Active on inclusion — won't speak at non-diverse panels</li>
+            <li>We've used Valency Bond via MCP API for our own Jevons Paradox research — found papers web search couldn't</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Prepared by Galileo 🔭 · Tomales Bay Capital · May 2026</p>
+        <p style="margin-top: 0.25rem; font-size: 0.75rem;">Sources: joshbloom.org, UC Berkeley Astronomy, Wikipedia, LinkedIn, valency.io, GitHub (profjsb, skyportal), Crunchbase, PitchBook, ScienceDaily, Berkeley News, Mattiq.com, Masters of Data Podcast</p>
+    </footer>
+</body>
+</html>
