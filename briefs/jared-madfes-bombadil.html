@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jared Madfes — Bombadil | Meeting Brief</title>
+    <style>
+        :root { --primary: #1a1a2e; --accent: #16a34a; --bg: #fafafa; --card-bg: #ffffff; --text: #2d3436; --text-light: #636e72; --border: #e0e0e0; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; max-width: 900px; margin: 0 auto; }
+        header { margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 2px solid var(--primary); }
+        .header-top { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; }
+        h1 { font-size: 2rem; color: var(--primary); margin-bottom: 0.25rem; }
+        .subtitle { color: var(--text-light); font-size: 1.1rem; }
+        .meta { font-size: 0.85rem; color: var(--text-light); margin-top: 0.5rem; }
+        .meta a { color: var(--accent); text-decoration: none; }
+        .meta a:hover { text-decoration: underline; }
+        .badge { display: inline-block; background: var(--accent); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500; margin-bottom: 0.5rem; margin-right: 0.25rem; }
+        .badge-thesis { background: #7c3aed; }
+        .badge-key { background: #dc2626; }
+        .badge-crypto { background: #f59e0b; }
+        section { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; }
+        h2 { font-size: 1.1rem; color: var(--primary); margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        h3 { font-size: 1rem; color: var(--primary); margin: 1rem 0 0.5rem; }
+        h3:first-child { margin-top: 0; }
+        ul { margin-left: 1.25rem; }
+        li { margin-bottom: 0.4rem; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 1rem; }
+        th, td { padding: 0.6rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { font-weight: 600; color: var(--text-light); font-size: 0.85rem; text-transform: uppercase; width: 160px; }
+        .callout { background: #f0fdf4; border-left: 3px solid var(--accent); padding: 1rem; margin: 1rem 0; }
+        .callout-warn { background: #fef3c7; border-left-color: #f59e0b; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .timeline { border-left: 2px solid var(--accent); margin-left: 0.5rem; padding-left: 1.25rem; }
+        .timeline-item { margin-bottom: 1rem; position: relative; }
+        .timeline-item::before { content: ''; position: absolute; left: -1.55rem; top: 0.5rem; width: 10px; height: 10px; background: var(--accent); border-radius: 50%; }
+        .timeline-year { font-size: 0.8rem; color: var(--text-light); font-weight: 600; }
+        .timeline-title { font-weight: 600; }
+        .num-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1rem; }
+        .num-item { text-align: center; padding: 1rem; background: #f8fafc; border-radius: 6px; }
+        .num-value { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
+        .num-label { font-size: 0.8rem; color: var(--text-light); }
+        footer { text-align: center; padding-top: 1.5rem; color: var(--text-light); font-size: 0.85rem; }
+        @media (max-width: 600px) { body { padding: 1rem; } h1 { font-size: 1.5rem; } section { padding: 1rem; } th { width: 120px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div>
+                <span class="badge badge-crypto">Crypto / Web3</span>
+                <span class="badge badge-thesis">Thesis Fit: AI + Crypto</span>
+                <h1>Jared Madfes</h1>
+                <p class="subtitle">General Partner · Bombadil (formerly Tribe Capital)</p>
+                <p class="meta">
+                    <a href="https://bombadil.co" target="_blank">bombadil.co</a> ·
+                    <a href="https://www.linkedin.com/in/madfes/" target="_blank">LinkedIn</a> ·
+                    <a href="https://x.com/madfes" target="_blank">@madfes</a> ·
+                    New York, NY
+                </p>
+            </div>
+            <div style="text-align: right; font-size: 0.85rem; color: var(--text-light);">
+                Prepared May 31, 2026<br>
+                Tomales Bay Capital
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <h2>At a Glance</h2>
+        <div class="num-grid">
+            <div class="num-item">
+                <div class="num-value">Forbes 30u30</div>
+                <div class="num-label">Bitcoin & Blockchain (2022)</div>
+            </div>
+            <div class="num-item">
+                <div class="num-value">$25K–$40M</div>
+                <div class="num-label">Investment Range</div>
+            </div>
+            <div class="num-item">
+                <div class="num-value">~$100M+</div>
+                <div class="num-label">Prior Crypto Portfolio (Family Office)</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Background</h2>
+        <table>
+            <tr><th>Current</th><td><strong>General Partner, Bombadil</strong> — his own fund, spun out post-Tribe</td></tr>
+            <tr><th>Previous</th><td><strong>Partner, Tribe Capital</strong> ($2.2B AUM) — co-founded Tribe Crypto, led all crypto/web3 initiatives</td></tr>
+            <tr><th>Before Tribe</th><td><strong>Hillside Ventures Investments S.A.</strong> — European family office, built $100M+ crypto portfolio</td></tr>
+            <tr><th>Education</th><td>The Lawrenceville School (NJ prep school); did not complete a traditional degree</td></tr>
+            <tr><th>Location</th><td>New York, NY</td></tr>
+            <tr><th>Style</th><td>Data-driven (Tribe's quant DNA), crypto-native, thesis-driven conviction investor</td></tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Career Timeline</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-year">Present</div>
+                <div class="timeline-title">General Partner — Bombadil</div>
+                <div>Own fund. Minimal public presence (stealth-ish). Focus appears to include vertical AI for PE portfolio companies based on recent LinkedIn commentary.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">~2020–2024</div>
+                <div class="timeline-title">Partner & Co-Founder, Tribe Crypto — Tribe Capital</div>
+                <div>Led all crypto investments at $1.6B+ AUM firm. Developed strategy spanning liquid token positions, DAO participation, and direct equity in crypto infrastructure. Led investments in Akash Networks, Lit Protocol, Mnemonic, Titan, WeMeta, and others.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">Pre-2020</div>
+                <div class="timeline-title">Hillside Ventures (European Family Office)</div>
+                <div>Built $100M+ crypto-focused portfolio. This is where he developed his crypto thesis and deal sourcing network before joining Tribe.</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Tribe Capital Context</h2>
+        <ul>
+            <li><strong>Founded:</strong> 2019 by Arjun Sethi, Jonathan Hsu, Ted Maidenberg (all ex-Social Capital)</li>
+            <li><strong>AUM:</strong> ~$2.2B (per Crunchbase); data-driven "technology company that deploys capital"</li>
+            <li><strong>Approach:</strong> Proprietary datasets + predictive models to score companies on growth quality, retention, network effects</li>
+            <li><strong>Notable portfolio:</strong> Slack, SpaceX, OpenAI, xAI, Apollo.io, Kraken, Carta, CloudKitchens, Coinbase</li>
+            <li><strong>Jared's role:</strong> Board Partner (still listed) + built the entire crypto vertical from scratch</li>
+            <li><strong>Co-investment program:</strong> "Firstlook" — LP co-invest vehicle</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Bombadil — Current Fund</h2>
+        <div class="callout callout-warn">
+            <strong>Limited public info.</strong> Bombadil's website is intentionally opaque ("You don't belong here"). This is clearly early-stage / stealth. The name is a Tolkien reference (Tom Bombadil — the enigmatic, powerful figure who doesn't care about the Ring).
+        </div>
+        <ul>
+            <li><strong>Structure:</strong> Solo GP fund (based on RocketReach data)</li>
+            <li><strong>Thesis (inferred):</strong> Crypto infrastructure + increasingly AI/vertical AI for PE portfolio companies</li>
+            <li><strong>Recent LinkedIn signal:</strong> "The arb of figuring out how to implement Vertical AI at portfolio companies is very real right now. It will fundamentally change underwriting for those who can do it predictably and unlock generational returns."</li>
+            <li><strong>Investment style:</strong> Likely carries Tribe's data-driven DNA but with more concentrated, conviction-based bets</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Notable Investments (Led at Tribe)</h2>
+        <ul>
+            <li><strong>Akash Networks</strong> — Decentralized cloud compute marketplace (relevant to AI infrastructure)</li>
+            <li><strong>Lit Protocol</strong> — Decentralized key management & access control</li>
+            <li><strong>Mnemonic</strong> — NFT data intelligence platform</li>
+            <li><strong>Titan</strong> — Crypto asset management for retail</li>
+            <li><strong>WeMeta</strong> — Metaverse analytics</li>
+            <li><strong>Visor Finance</strong> — DeFi active liquidity management</li>
+            <li><strong>Eternal Return</strong> — (details limited)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Talking Points & Angles</h2>
+        <div class="callout">
+            <strong>Why this meeting matters:</strong> Jared bridges crypto and AI infrastructure — two of TBC's core thesis areas. His Akash investment (decentralized compute) maps directly to AI infrastructure plays. His new focus on "vertical AI for PE" suggests he's thinking about applied AI beyond crypto.
+        </div>
+        <h3>Questions to Explore</h3>
+        <ul>
+            <li>What's Bombadil's thesis now? Pure crypto, crypto + AI infra, or broader?</li>
+            <li>How does he see the intersection of decentralized compute (Akash-style) and AI training/inference demand?</li>
+            <li>What does "vertical AI for PE portfolio companies" look like in practice? Is Bombadil investing in those tools or advising PE firms?</li>
+            <li>Fund size / check size at Bombadil? Stage focus?</li>
+            <li>Is he seeing deal flow in energy + crypto (proof-of-work mining, data center power)?</li>
+            <li>Co-investment / syndication opportunities?</li>
+        </ul>
+        <h3>Common Ground</h3>
+        <ul>
+            <li><strong>AI infrastructure:</strong> TBC thesis overlap on compute, energy, and AI picks-and-shovels</li>
+            <li><strong>Data-driven investing:</strong> Tribe's quant approach resonates with TBC's systematic deal scoring</li>
+            <li><strong>NYC-based:</strong> Both in New York — easy to build ongoing relationship</li>
+            <li><strong>Young GPs building firms:</strong> Both early in firm-building journey</li>
+            <li><strong>Crypto × energy:</strong> Mining infrastructure, data center power demand</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Online Presence</h2>
+        <table>
+            <tr><th>X/Twitter</th><td><a href="https://x.com/madfes" target="_blank">@madfes</a> — ~5K followers. Bio: "Bombadil @bombadilco. Formerly Tribe Capital. At war with entropy."</td></tr>
+            <tr><th>LinkedIn</th><td><a href="https://www.linkedin.com/in/madfes/" target="_blank">/in/madfes</a> — Title: Bombadil</td></tr>
+            <tr><th>Personal site</th><td><a href="https://jared.fr" target="_blank">jared.fr</a> — Minimalist, just links to Bombadil</td></tr>
+            <tr><th>Forbes</th><td><a href="https://www.forbes.com/profile/jared-madfes/" target="_blank">Forbes 30 Under 30 profile</a> (Bitcoin & Blockchain, 2022)</td></tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Key Signals</h2>
+        <ul>
+            <li>🟢 Forbes 30u30, deep crypto expertise, ex-$2.2B fund — serious operator</li>
+            <li>🟢 Pivoting toward AI + crypto intersection — thesis alignment with TBC</li>
+            <li>🟢 NYC-based, young GP building his own thing — natural peer relationship</li>
+            <li>🟡 Bombadil is very early/opaque — hard to assess fund size or strategy precisely</li>
+            <li>🟡 Primarily crypto background — unclear depth on energy/defense/robotics (other TBC thesis areas)</li>
+            <li>🟡 Tribe had some reputation complexity (FTX involvement pre-collapse) — Jared appears to have navigated this cleanly by going independent</li>
+        </ul>
+    </section>
+
+    <footer>
+        Prepared by Icarus · Tomales Bay Capital · May 31, 2026<br>
+        Sources: Forbes, Crunchbase, NFX Signal, RocketReach, X, LinkedIn, Tribe Capital
+    </footer>
+</body>
+</html>
