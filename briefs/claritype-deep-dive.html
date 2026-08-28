@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claritype — Deep Dive | Tomales Bay Capital</title>
+    <style>
+        :root { --primary: #1a1a2e; --accent: #16a34a; --bg: #fafafa; --card-bg: #ffffff; --text: #2d3436; --text-light: #636e72; --border: #e0e0e0; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; padding: 2rem; max-width: 940px; margin: 0 auto; }
+        header { margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 2px solid var(--primary); }
+        .header-top { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; }
+        h1 { font-size: 2.1rem; color: var(--primary); margin-bottom: 0.25rem; }
+        .subtitle { color: var(--text-light); font-size: 1.1rem; }
+        .meta { font-size: 0.85rem; color: var(--text-light); margin-top: 0.5rem; }
+        .meta a { color: var(--accent); text-decoration: none; }
+        .meta a:hover { text-decoration: underline; }
+        .badge { display: inline-block; background: var(--accent); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500; margin-bottom: 0.5rem; margin-right: 0.25rem; }
+        .badge-thesis { background: #7c3aed; }
+        .badge-key { background: #dc2626; }
+        section { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; }
+        h2 { font-size: 1.15rem; color: var(--primary); margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        h3 { font-size: 1.02rem; color: var(--primary); margin: 1.25rem 0 0.5rem; }
+        h3:first-child { margin-top: 0; }
+        ul, ol { margin-left: 1.25rem; }
+        li { margin-bottom: 0.45rem; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 1rem; }
+        th, td { padding: 0.6rem; text-align: left; border-bottom: 1px solid var(--border); vertical-align: top; }
+        th { font-weight: 600; color: var(--text-light); font-size: 0.85rem; text-transform: uppercase; }
+        .callout { background: #f0fdf4; border-left: 3px solid var(--accent); padding: 1rem; margin: 1rem 0; }
+        .callout-warn { background: #fef3c7; border-left-color: #f59e0b; }
+        .callout-purple { background: #f5f3ff; border-left-color: #7c3aed; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .num-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 1rem; margin-bottom: 1rem; }
+        .num-item { text-align: center; padding: 1rem; background: #f8fafc; border-radius: 6px; }
+        .num-value { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
+        .num-label { font-size: 0.8rem; color: var(--text-light); }
+        figure { margin: 1.25rem 0; }
+        figure img { width: 100%; border: 1px solid var(--border); border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+        figcaption { font-size: 0.82rem; color: var(--text-light); margin-top: 0.5rem; text-align: center; }
+        .verdict { border: 2px solid #7c3aed; }
+        .tag { display:inline-block; font-size:0.72rem; font-weight:600; padding:0.15rem 0.5rem; border-radius:999px; margin-right:0.35rem; }
+        .tag-pro { background:#dcfce7; color:#166534; }
+        .tag-con { background:#fee2e2; color:#991b1b; }
+        footer { text-align: center; padding-top: 1.5rem; color: var(--text-light); font-size: 0.85rem; }
+        @media (max-width: 600px) { body { padding: 1rem; } h1 { font-size: 1.5rem; } section { padding: 1rem; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div>
+                <span class="badge badge-key">Deep Dive — Claritype</span>
+                <span class="badge badge-thesis">AI × Energy Ops · Auditable AI · Ex-Palantir</span>
+                <h1>Claritype</h1>
+                <p class="subtitle">Auditable, verification-first enterprise AI — now wedging into renewable-energy operations</p>
+                <p class="meta">
+                    <a href="https://www.claritype.com" target="_blank">claritype.com</a> ·
+                    Founder/CEO <a href="https://www.linkedin.com/in/rob-giardina" target="_blank">Rob Giardina</a> ·
+                    <a href="rob-giardina-claritype.html">Meeting brief →</a>
+                </p>
+            </div>
+            <div style="text-align: right; font-size: 0.85rem; color: var(--text-light);">
+                Prepared Aug 28, 2026<br>
+                Tomales Bay Capital
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <h2>The One-Paragraph Take</h2>
+        <p><strong>Claritype is a horizontal "trusted AI" analytics platform, founded by an ex-Palantir-Maven team, that is now sharpening a renewable-energy-operations wedge.</strong> The core product turns messy enterprise data into a single governed semantic model and lets non-technical users ask questions and get <em>verifiable, auditable</em> answers (their "GAR" — Generative Augmented Retrieval — algorithm). The energy motion — a power-plant constraint optimizer for curtailment recovery / BESS sizing, plus human-approved AI actions for microgrids — is the most concrete, ROI-legible expression of that platform. The bet that matters: in regulated, physical, high-liability environments (grids, power plants), <strong>the scarce ingredient isn't AI intelligence, it's AI you can audit and act on without getting fired or fined.</strong> Claritype is building exactly that layer. Open questions: how much energy is production vs. notional, the embed/channel economics, and traction on a seed that's now 3+ years old.</p>
+    </section>
+
+    <section>
+        <h2>Snapshot</h2>
+        <div class="num-grid">
+            <div class="num-item"><div class="num-value">~$6.6M</div><div class="num-label">Seed (PitchBook, Jul 2022)</div></div>
+            <div class="num-item"><div class="num-value">8VC · Bow · One Way</div><div class="num-label">Known investors (+ DIA strategic)</div></div>
+            <div class="num-item"><div class="num-value">Ex-Palantir/Amazon</div><div class="num-label">Founding team pedigree</div></div>
+            <div class="num-item"><div class="num-value">5+ industries</div><div class="num-label">Healthcare, finance, transport, public sector, energy</div></div>
+        </div>
+        <table>
+            <tr><th>Founded</th><td>~Dec 2020</td></tr>
+            <tr><th>HQ / model</th><td>Enterprise SaaS + embeddable AI layer (embeds in partners' software)</td></tr>
+            <tr><th>Core IP</th><td>GAR (Generative Augmented Retrieval) — claims "100% verifiable, fact-based, auditable" answers over structured data</td></tr>
+            <tr><th>Energy GTM</th><td>Power-plant constraint optimizer (curtailment/BESS), microgrid action copilot; embed-in-partner-software channel motion</td></tr>
+            <tr><th>Intro path</th><td>Norwest (Ken Yagen) &amp; Advent — being circulated to their portfolios (e.g., Volue)</td></tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Team — Why It's Credible</h2>
+        <p>This is a genuinely top-decile founding roster for industrial/enterprise AI — heavy on Palantir's "deploy trustworthy AI into mission-critical, regulated environments" DNA:</p>
+        <table>
+            <tr><th>Rob Giardina</th><td><strong>Founder &amp; CEO.</strong> Ex-Palantir: co-founder of the Commercial division, leader of the EU division, <strong>head of the Maven AI team</strong> (Palantir's flagship defense-AI program).</td></tr>
+            <tr><th>Ilya Lipkind</th><td><strong>Founder &amp; CTO.</strong> Ex-Amazon: led AI for Amazon's Advertising group, "0 → $30B."</td></tr>
+            <tr><th>Brian Corcoran</th><td>Head of Engineering — ex-Palantir.</td></tr>
+            <tr><th>Erik Järleberg / Justin Streufert</th><td>Founding Engineers — ex-Palantir.</td></tr>
+            <tr><th>Julie Kantorovskiy</th><td>VP Operations — ex-Coursera.</td></tr>
+            <tr><th>Advisors</th><td>Jeffrey Davitz (SRI AI Center, ran DARPA CALO — "largest AI project ever funded"; sold 2 AI cos; PhD Columbia) · Paul Stolorz (early senior AI hire at Google, ex-NASA JPL; PhD Caltech).</td></tr>
+            <tr><th>Also on energy emails</th><td>Mike Scheuer (mike@claritype.com) — cc'd on the energy GTM outreach.</td></tr>
+        </table>
+        <div class="callout"><strong>Read:</strong> Rob didn't stumble into "auditable AI for regulated ops" — he helped build the canonical version of it (Maven) at Palantir. That's the strongest single reason to take this seriously.</div>
+    </section>
+
+    <section>
+        <h2>The Product — What They Actually Sell</h2>
+        <p><strong>Base platform:</strong> a conversational AI analyst over structured enterprise data (CRM, ERP, warehouses, custom DBs). It builds one unified semantic model ("a single layer of meaning"), so analysts/PMs/ops can ask questions in natural language and get governed, explainable answers — "insights in hours, not weeks," replacing static dashboards and BI backlogs. Claims: <strong>100% verifiable answers</strong> (GAR), <strong>90% adoption</strong> by non-technical users.</p>
+        <p><strong>The differentiator they lead with:</strong> verification &amp; auditability. Rob's own framing of the competitive gap — most firms use "commodity AI within their data infrastructure in ways that lack the key auditing steps required for confident and compliant action." Claritype's pitch is that every answer/recommendation carries provenance and an audit trail, which is what unlocks <em>action</em> (not just insight) in regulated settings.</p>
+        <h3>The energy application (the part Jack cares about)</h3>
+        <p>Rob is pointing the platform at <strong>renewable-power operations and capital allocation</strong>. Two product surfaces, shown in the materials he forwarded:</p>
+
+        <figure>
+            <img src="assets/claritype/living-horizon.png" alt="Claritype Living Horizon RHPO optimizer">
+            <figcaption><strong>"Living Horizon" — the RHPO optimizer.</strong> A rolling-horizon plant optimizer replaying observed operation vs. counterfactual: MW output vs. export cap, observed curtailment (orange), BESS dispatch, day-ahead spot price (0–182 €/MWh), and battery state-of-charge — with sub-100ms "optimal" solve times and setpoint outputs (e.g., bess_p −4.50 MW, POI 8.42 MW, PV 12.92 MW, SOC target 67%).</figcaption>
+        </figure>
+
+        <figure>
+            <img src="assets/claritype/overwatt-microgrid.png" alt="Overwatt microgrid AI copilot with approval gates">
+            <figcaption><strong>"Overwatt" — microgrid action copilot (Church Rock Microgrid).</strong> A single-line device diagram (grid-tie meter 883 kW, BESS 81.8% SOC discharging, backup genset 449 kW, PV arrays) with an AI copilot that reasons about reserves ("~1,720 kWh in reserve at 86% SOC") and executes actions <em>one step at a time behind explicit Approve/Decline gates</em> — start genset, then open islanding breaker. This is the "auditable AI action" thesis made literal.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="assets/claritype/curtailment-calendar.png" alt="2025 curtailment loss calendar heatmap">
+            <figcaption><strong>The problem, quantified.</strong> A 2025 calendar heatmap of daily EUR lost to grid curtailment for a plant — cumulative <strong>€80,419 lost</strong> over the year, with worst-loss days surfaced for replay (e.g., 2025-09-11: 137.7 MWh curtailed).</figcaption>
+        </figure>
+
+        <figure>
+            <img src="assets/claritype/bess-counterfactual.png" alt="10 MWh / 2 MW BESS counterfactual value recovered">
+            <figcaption><strong>The business case, quantified.</strong> A counterfactual for a specific battery size (10 MWh / 2 MW): daily EUR <em>recovered</em>, cumulative <strong>+€204,914/yr</strong>. Failed solves are logged (red) for auditability. Pair the two calendars and you have a clean, defensible ROI story for a capital decision.</figcaption>
+        </figure>
+
+        <div class="callout callout-warn"><strong>Important caveat (his words):</strong> Rob labels some screens "a notional application similar to our customers' asset performance and control systems." So treat the energy optimizer as a <strong>compelling, ROI-legible prototype/vision</strong> — verify how many energy customers are <em>live in production</em> vs. illustrative. This is the single most important diligence question.</div>
+    </section>
+
+    <section>
+        <h2>Market Context — BCG's "AI-First Power &amp; Utilities" (the report Rob attached)</h2>
+        <p>Rob attached BCG's March 2026 <em>Executive Perspectives: Power &amp; Utilities — AI-First Companies Win the Future</em> as third-party air cover. The headline numbers he's implicitly anchoring to:</p>
+        <ul>
+            <li><strong>~$150B</strong> in capex efficiency unlockable for new builds via AI, and <strong>&gt;20%</strong> enterprise operational-efficiency gains (BCG's executive-summary framing for the P&amp;U sector).</li>
+            <li>Per-workflow AI impact cited: <strong>&gt;40% EBIT improvement</strong>, <strong>~4 hours/week</strong> employee time savings, <strong>&gt;90%</strong> higher job satisfaction, <strong>+15 pts</strong> NPS.</li>
+            <li>Structural drivers: data-center/electrification load growth demanding bigger capital programs; siloed IT/OT data limiting responsiveness; affordability pressure from regulators; renewables/storage/EV integration increasing complexity and volatility.</li>
+            <li>BCG's "AI-first" ladder: <strong>Deploy</strong> (point solutions) → <strong>Reshape</strong> (end-to-end process transformation) → <strong>Invent</strong> (new AI-first offerings) — with capital-allocation optimization (screen/prioritize/optimize generation + network investments) called out explicitly.</li>
+        </ul>
+        <div class="callout"><strong>Why this matters for Claritype:</strong> BCG's "optimize capital and portfolio decisions" and "tame complexity through real-time intelligence over siloed IT/OT data" are almost a spec sheet for Claritype's optimizer. The report validates the <em>market</em>; it doesn't validate Claritype's <em>share</em> of it. Useful tailwind, not proof of traction.</div>
+    </section>
+
+    <section>
+        <h2>Investment Lens — Bull vs. Bear</h2>
+        <h3>Bull case</h3>
+        <ul>
+            <li><span class="tag tag-pro">TEAM</span> Ex-Palantir-Maven + ex-Amazon-Ads-AI. They've shipped trustworthy AI into the hardest regulated environments on earth.</li>
+            <li><span class="tag tag-pro">WEDGE</span> "Auditable AI action" is a real, under-served need. In grids/plants, liability — not intelligence — is the blocker to automation. The Approve/Decline + provenance layer targets exactly that.</li>
+            <li><span class="tag tag-pro">ROI</span> The energy optimizer produces hard, back-tested EUR numbers (€80K lost → €205K recovered). That's a CFO-legible sale, not a vibes sale.</li>
+            <li><span class="tag tag-pro">GTM</span> Embed-in-partner-software = potential channel leverage (OEM/asset-management vendors resell AI features), shorter path to distribution than pure direct SaaS.</li>
+            <li><span class="tag tag-pro">TIMING</span> BCG-grade tailwind: P&amp;U sector under regulatory + load-growth pressure to adopt AI now.</li>
+        </ul>
+        <h3>Bear case / risks</h3>
+        <ul>
+            <li><span class="tag tag-con">FOCUS</span> Horizontal platform touching 5+ industries at seed stage. Energy may be one of several wedges rather than a committed franchise — dilution risk.</li>
+            <li><span class="tag tag-con">PROOF</span> Some energy screens are self-described "notional." Need named, live production deployments and retention, not demos.</li>
+            <li><span class="tag tag-con">VINTAGE</span> $6.6M seed from mid-2022. 3+ years in → either impressive capital efficiency or slow PMF. Get revenue, burn, runway.</li>
+            <li><span class="tag tag-con">CLAIM</span> "100% verifiable" is marketing-strong; no LLM system is literally 100% correct. Understand what's actually guaranteed (retrieval provenance / audit trail) vs. positioning.</li>
+            <li><span class="tag tag-con">COMPETITION</span> Crowded lane: Palantir itself (Foundry/AIP), grid-optimization specialists, BI-copilot startups, and incumbent energy-software vendors (the very partners it wants to embed in) could build vs. buy.</li>
+            <li><span class="tag tag-con">CHANNEL RISK</span> Embedding in partners' software means the partner owns the customer — margin, control, and defensibility questions.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Diligence Questions to Ask</h2>
+        <ol>
+            <li><strong>Production reality:</strong> Which energy customers are live in production today (named)? What's deployed vs. notional in the optimizer screens? Retention / expansion?</li>
+            <li><strong>Traction:</strong> Current ARR, growth rate, burn, runway. Are you raising an A? Terms/target?</li>
+            <li><strong>GAR, technically:</strong> What does "Generative Augmented Retrieval" do that RAG doesn't? What exactly is guaranteed by "100% verifiable"?</li>
+            <li><strong>Channel economics:</strong> In the embed model, who owns the customer relationship and data? Rev-share? What stops the partner from building it?</li>
+            <li><strong>Energy commitment:</strong> Is energy a dedicated vertical with a team and roadmap, or opportunistic? Why energy vs. healthcare (where you already have DIA/dental)?</li>
+            <li><strong>Moat:</strong> What's defensible in 24 months when Palantir AIP and every BI vendor ship "trusted AI over your data"? Is the audit layer genuinely hard to replicate?</li>
+            <li><strong>Regulatory:</strong> For AI that takes physical grid actions — what's the certification/compliance path, and who carries liability?</li>
+        </ol>
+    </section>
+
+    <section class="verdict">
+        <h2 style="color:#7c3aed;">Verdict / How TBC Should Play It</h2>
+        <p><strong>Worth a real conversation — lean in, stay skeptical on traction.</strong> The team is excellent and the "auditable AI for regulated physical operations" thesis is genuinely differentiated and squarely on TBC's AI × energy × deep-tech line. The energy optimizer is the most investable expression of the platform because it converts fuzzy "AI value" into hard EUR on a capital decision — exactly the kind of ROI story that clears IC.</p>
+        <div class="callout callout-purple">
+            <strong>The move:</strong> Treat this less as "is Claritype fundable" (the seed is done; an A is the live question) and more as <strong>"can TBC add asymmetric value?"</strong> Your edge here is <strong>energy-operator access</strong> — IPPs, renewable asset owners, grid-software vendors in the portfolio/network. That's worth more to Rob right now than a check, because his #1 need is <em>design partners and reference deployments in energy</em>. If you can broker a real energy customer, you earn allocation and information rights on the A. Lead the meeting with that offer, then extract the diligence answers above. If the "notional" screens turn out to be mostly vision with thin production behind them, it's a <em>track-and-revisit</em>, not a pass — the team is good enough to back once energy PMF is real.
+        </div>
+    </section>
+
+    <footer>
+        <p>Prepared by Icarus 🔥 · Tomales Bay Capital · Aug 28, 2026</p>
+        <p style="margin-top: 0.25rem; font-size: 0.75rem;">Sources: claritype.com (home/company/product — "Trusted AI", GAR / "100% verifiable", 90% adoption, 5+ industries incl. healthcare/finance/transport/public-sector; full team + advisor bios). Forwarded email from Rob Giardina (rob@claritype.com), Aug 28 2026, to Sebastian (cc Mike Scheuer), routed via Ken Yagen/Norwest to Advent-orbit portfolios (Volue) — energy GTM, embed/audit wedge, "notional application" caveat. Four product screenshots (Living Horizon RHPO optimizer; Overwatt Church Rock microgrid copilot with Approve/Decline gates; 2025 curtailment calendar €80,419 lost; 10 MWh/2 MW counterfactual +€204,914 recovered) — figures read directly from images. BCG, "Executive Perspectives: Power &amp; Utilities — AI-First Companies Win the Future," March 2026 (attached PDF: ~$150B capex efficiency, &gt;20% operational efficiency, &gt;40% EBIT, ~4 hrs/wk savings, +15pt NPS; Deploy→Reshape→Invent). Funding: PitchBook / CB Insights (~$6.61M seed, Jul 2022; 8VC, Bow Capital, One Way Ventures; DIA strategic). Some Palantir role detail per Claritype self-description; energy screens partly "notional" per founder. Production deployments &amp; current traction NOT independently verified — confirm directly.</p>
+    </footer>
+</body>
+</html>
