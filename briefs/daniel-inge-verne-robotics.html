@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Inge — Verne Robotics (ex-Seedcamp) | Meeting Brief</title>
+    <style>
+        :root { --primary: #1a1a2e; --accent: #16a34a; --bg: #fafafa; --card-bg: #ffffff; --text: #2d3436; --text-light: #636e72; --border: #e0e0e0; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem; max-width: 900px; margin: 0 auto; }
+        header { margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 2px solid var(--primary); }
+        .header-top { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; }
+        h1 { font-size: 2rem; color: var(--primary); margin-bottom: 0.25rem; }
+        .subtitle { color: var(--text-light); font-size: 1.1rem; }
+        .meta { font-size: 0.85rem; color: var(--text-light); margin-top: 0.5rem; }
+        .meta a { color: var(--accent); text-decoration: none; }
+        .meta a:hover { text-decoration: underline; }
+        .badge { display: inline-block; background: var(--accent); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500; margin-bottom: 0.5rem; margin-right: 0.25rem; }
+        .badge-thesis { background: #7c3aed; }
+        .badge-key { background: #dc2626; }
+        section { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; }
+        h2 { font-size: 1.1rem; color: var(--primary); margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        h3 { font-size: 1rem; color: var(--primary); margin: 1rem 0 0.5rem; }
+        h3:first-child { margin-top: 0; }
+        ul, ol { margin-left: 1.25rem; }
+        li { margin-bottom: 0.4rem; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 1rem; }
+        th, td { padding: 0.6rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { font-weight: 600; color: var(--text-light); font-size: 0.85rem; text-transform: uppercase; width: 160px; }
+        .callout { background: #f0fdf4; border-left: 3px solid var(--accent); padding: 1rem; margin: 1rem 0; }
+        .callout-warn { background: #fef3c7; border-left-color: #f59e0b; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .num-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1rem; }
+        .num-item { text-align: center; padding: 1rem; background: #f8fafc; border-radius: 6px; }
+        .num-value { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
+        .num-label { font-size: 0.8rem; color: var(--text-light); }
+        footer { text-align: center; padding-top: 1.5rem; color: var(--text-light); font-size: 0.85rem; }
+        @media (max-width: 600px) { body { padding: 1rem; } h1 { font-size: 1.5rem; } section { padding: 1rem; } th { width: 120px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div>
+                <span class="badge badge-key">Engineer — Verne Robotics</span>
+                <span class="badge badge-thesis">Robotics · Ex-VC · Talent</span>
+                <h1>Daniel Inge</h1>
+                <p class="subtitle">Engineer, Verne Robotics (YC S25 · superhumanoids) · Previously VC at Seedcamp (London)</p>
+                <p class="meta">
+                    <a href="https://www.linkedin.com/in/daniel-inge/" target="_blank">LinkedIn</a> ·
+                    <a href="https://www.vernerobotics.com" target="_blank">vernerobotics.com</a>
+                </p>
+            </div>
+            <div style="text-align: right; font-size: 0.85rem; color: var(--text-light);">
+                Prepared Aug 28, 2026<br>
+                Tomales Bay Capital
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <h2>At a Glance</h2>
+        <div class="num-grid">
+            <div class="num-item">
+                <div class="num-value">Verne</div>
+                <div class="num-label">Engineer at YC S25 humanoid-robotics startup</div>
+            </div>
+            <div class="num-item">
+                <div class="num-value">Seedcamp</div>
+                <div class="num-label">Ex-VC (London, 2023) — seed-stage Europe</div>
+            </div>
+            <div class="num-item">
+                <div class="num-value">Builder + Investor</div>
+                <div class="num-label">Rare combo: writes code, thinks like an allocator</div>
+            </div>
+            <div class="num-item">
+                <div class="num-value">Robotics</div>
+                <div class="num-label">Core TBC thesis area (Object Zero / actuators)</div>
+            </div>
+        </div>
+        <div class="callout callout-warn">
+            <strong>Read before the meeting:</strong> Public footprint on Daniel is thin, so identity confirmation matters. The <code>/in/daniel-inge/</code> profile Jack shared maps to an <strong>engineer at Verne Robotics</strong> (SF Bay Area) who <strong>previously spent 2023 as a VC at Seedcamp in London</strong>. If the person across the table doesn't match that (e.g., he introduces himself as a full-time investor or a different company), recalibrate — most of this brief keys off the Verne + Seedcamp identity. Open with an easy "so what are you working on at Verne these days?" to confirm fast.
+        </div>
+    </section>
+
+    <section>
+        <h2>Who He Is</h2>
+        <p>Daniel Inge is an <strong>engineer at Verne Robotics</strong>, a Y Combinator (S25) startup building <strong>intelligent "superhumanoid" robots to automate physical work</strong>. Before Verne, he did a stint <strong>on the investing side at Seedcamp</strong> — one of Europe's most established seed funds (London, ~2023). That combination is the interesting part: he's a <strong>technical operator who has also sat in the VC seat</strong>, so he can talk shop on both robotics engineering and how early-stage funds think.</p>
+        <table>
+            <tr><th>Current</th><td>Engineer, <a href="https://www.vernerobotics.com" target="_blank">Verne Robotics</a> (YC S25, SF)</td></tr>
+            <tr><th>Previously</th><td>VC / investment team, <a href="https://seedcamp.com" target="_blank">Seedcamp</a> (London, ~Jan–Dec 2023)</td></tr>
+            <tr><th>Location</th><td>San Francisco Bay Area</td></tr>
+            <tr><th>Domain</th><td>Robotics, embodied AI, seed-stage venture</td></tr>
+        </table>
+        <p style="font-size:0.85rem;color:var(--text-light);">Note: there are limited public sources on Daniel specifically; the above is reconstructed from his LinkedIn and Verne/Seedcamp materials. Treat exact dates and title scope as approximate and confirm in person.</p>
+    </section>
+
+    <section>
+        <h2>Verne Robotics — His Current Platform</h2>
+        <p>To read Daniel, understand where he's spending his days:</p>
+        <ul>
+            <li><strong>What:</strong> "Verne builds intelligent machines" — <strong>intelligent superhumanoids</strong> to automate physical/manual work. Positions itself as "the fastest way to make robots useful."</li>
+            <li><strong>Batch/stage:</strong> <strong>Y Combinator S25</strong>, founded 2025, ~7 people, <strong>~$500K</strong> YC round on record. Very early.</li>
+            <li><strong>Founders:</strong> <strong>Neil Nie</strong> (Co-founder/CEO) — robotics researcher, Columbia/Stanford (advised by Shuran Song, Jiajun Wu; part of Fei-Fei Li's Vision & Learning Lab), holds multi-modal perception patents, helped build Apple Vision Pro, left a Berkeley PhD to start Verne. <strong>Aditya Jha</strong> (Co-founder/CPO) — led Azure Copilot from preview to GA at Microsoft, Cornell Phi Beta Kappa.</li>
+            <li><strong>Culture signals:</strong> "technical excellence is the default," "move fast and iterate," "persevere… turn friction into fuel." Ships a developer kit; hiring robotics software / data-infra engineers in SF.</li>
+        </ul>
+        <div class="callout">
+            <strong>Takeaway:</strong> Daniel is embedded in a <strong>frontier humanoid-robotics team with serious research pedigree</strong> at the earliest fundable stage. Whatever the meeting's purpose, he's a live wire into (a) the YC S25 robotics cohort, (b) the Stanford/Fei-Fei Li embodied-AI research network, and (c) Seedcamp's European seed ecosystem.</td>
+        </div>
+    </section>
+
+    <section>
+        <h2>Why Jack Should Care</h2>
+        <ol>
+            <li><strong>Robotics is core thesis.</strong> TBC's "Object Zero" two-wave thesis explicitly flags robotics/actuators as Wave 2 ("no Moore's Law for actuators"). Verne is exactly that wave — a humanoid play with real research pedigree. First-hand ground truth from inside a YC humanoid startup is valuable signal.</li>
+            <li><strong>Builder + ex-VC = high-signal peer.</strong> He can give you an unusually candid read on the robotics landscape (what's real vs. demo-ware) <em>and</em> speak the language of seed investing. Rare to get both in one conversation.</li>
+            <li><strong>Deal-flow node.</strong> Between Verne (YC S25), the Stanford embodied-AI lab network, and Seedcamp's European portfolio, he sits on top of multiple pipelines TBC doesn't natively touch — especially European seed and frontier robotics talent.</li>
+            <li><strong>Optionality on him personally.</strong> Technical people who've done a VC tour and are now building are exactly the kind of person who later starts a company or becomes a scout/angel. Cheap to build the relationship now.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Talking Points / Hooks</h2>
+        <ul>
+            <li><strong>Confirm + open:</strong> "What are you building at Verne?" — gets identity confirmed and him talking about work he cares about.</li>
+            <li><strong>Robotics reality check:</strong> where humanoids actually work today vs. hype; what's the real bottleneck — hardware/actuators, data, or the learning stack? (Ties directly to TBC's "actuators obey Newton's Laws" framing.)</li>
+            <li><strong>Verne's wedge:</strong> "fastest way to make robots useful" and a developer kit — is the bet on a faster path to <em>deployment</em> rather than a moonshot general humanoid? Where does data come from?</li>
+            <li><strong>Seedcamp lens:</strong> how European seed differs from the US, what he learned as an investor, and whether that changed how he picks what to work on.</li>
+            <li><strong>Two-way value:</strong> offer TBC's deep-tech/energy/robotics network; ask what would be useful to him and the Verne team. Keep it relationship-first — he's early-career and technical, not raising a fund.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Watch-Fors</h2>
+        <ul>
+            <li><strong>Identity is the #1 risk.</strong> Thin public footprint + a common-ish name. Confirm Verne + Seedcamp early; if it doesn't match, treat the rest of this brief as unverified.</li>
+            <li><strong>He's an engineer, not the founder or a fund GP.</strong> Calibrate the ask — this is a peer/network conversation, not a deal or an LP pitch. Don't over-index on "raising."</li>
+            <li><strong>Verne is pre-everything.</strong> ~$500K, ~7 people, founded 2025. Any investment angle is extremely early-stage and would run through the founders (Neil Nie / Aditya Jha), not Daniel.</li>
+            <li><strong>Sources are sparse.</strong> Dates, title scope, and current status are reconstructed from limited public data — verify specifics conversationally rather than asserting them.</li>
+        </ul>
+    </section>
+
+    <section style="border-color:#7c3aed;">
+        <h2 style="color:#7c3aed;">🔍 Deep Dive — The Non-Obvious Stuff</h2>
+        <p style="margin-bottom:1rem;font-size:0.9rem;color:var(--text-light);">For reading the person and the moment, not just the resume.</p>
+
+        <h3>1. The VC-to-engineer move is a tell</h3>
+        <p>Most people go operator → investor. Daniel appears to have gone <strong>investor → operator</strong> (Seedcamp → building at a YC robotics startup). That's a deliberate choice to get his hands dirty on the hardest possible problem rather than stay in the comfortable seat. It signals conviction about robotics specifically and a builder's temperament. People who make that move often end up founding — worth tracking as a future founder, not just a contact.</p>
+
+        <h3>2. He's a proxy for the entire YC S25 robotics cohort</h3>
+        <p>Verne is one node in what looks like a robotics-heavy recent YC batch. Daniel is a low-cost, high-trust way to get an insider's map of who's real in that cohort — which teams have genuine technical depth vs. which are riding the humanoid narrative. For a seed fund, that peer-level intel is worth more than any pitch deck.</p>
+
+        <h3>3. The Stanford/Fei-Fei Li embodied-AI thread</h3>
+        <p>His CEO Neil Nie comes straight out of the Fei-Fei Li / Shuran Song / Jiajun Wu orbit — arguably the most important academic lineage in embodied AI right now. Being one relationship away from that network (via a colleague, not a cold email) is a genuine asset if TBC wants to be early on robotics/embodied-AI spinouts. Ask Daniel who the interesting people coming out of those labs are.</p>
+
+        <div class="callout" style="border-left-color:#7c3aed;background:#f5f3ff;">
+            <strong>The read:</strong> Daniel is a technical, ex-VC engineer inside a frontier humanoid startup — a high-signal peer and a network node into robotics + European seed, not a deal. Play it as relationship-building on core thesis: get his honest read on where humanoids actually are, mine the YC S25 / Stanford embodied-AI networks, and offer TBC's deep-tech reach in return. Confirm the Verne + Seedcamp identity in the first two minutes so you're building on solid ground.
+        </div>
+    </section>
+
+    <footer>
+        <p>Prepared by Icarus 🔥 · Tomales Bay Capital · Aug 28, 2026</p>
+        <p style="margin-top: 0.25rem; font-size: 0.75rem;">Sources: LinkedIn /in/daniel-inge (Engineer, Verne Robotics; Seedcamp, London, Jan–Dec 2023 — identity per web-search consensus; profile itself is auth-gated). vernerobotics.com/company (mission "intelligent superhumanoids"; founders Neil Nie [ex-Columbia/Stanford, Fei-Fei Li Vision &amp; Learning Lab, Apple Vision Pro, left Berkeley PhD] &amp; Aditya Jha [ex-Microsoft Azure Copilot, Cornell]; principles; SF hiring). Y Combinator directory (Verne Robotics, S25, founded 2025, active, team ~7). PitchBook / third-party (~$500K YC round). Seedcamp (European seed fund, London). Daniel's individual public footprint is thin; dates, title scope, and current role reconstructed from limited sources — confirm in person. TBC "Object Zero" robotics thesis per internal notes.</p>
+    </footer>
+</body>
+</html>
